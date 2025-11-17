@@ -17,7 +17,7 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
     <header
       className={clsx(
         props.className,
-        "relative container flex items-center justify-between py-[18px]",
+        "relative container flex items-center justify-between bg-white py-[18px]",
       )}
     >
       {/* Logo */}

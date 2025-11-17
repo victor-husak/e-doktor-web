@@ -11,10 +11,10 @@ export const RootLayout: React.FC<RootLayoutProps> = (
   props,
 ): React.JSX.Element => {
   return (
-    <Components.Scroll className={clsx(props.className, "")}>
+    <Components.Scroll className={clsx(props.className, "relative")}>
       <Components.Topline />
 
-      <Components.Header />
+      <Components.Header className="sticky top-0 z-2" />
 
       <Components.Info />
 
