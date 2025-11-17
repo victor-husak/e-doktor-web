@@ -11,7 +11,7 @@ export const RootLayout: React.FC<RootLayoutProps> = (
   props,
 ): React.JSX.Element => {
   return (
-    <div className={clsx(props.className, "")}>
+    <Components.Scroll className={clsx(props.className, "")}>
       <Components.Topline />
 
       <Components.Header />
@@ -21,6 +21,6 @@ export const RootLayout: React.FC<RootLayoutProps> = (
       {props.children}
 
       <Components.Footer />
-    </div>
+    </Components.Scroll>
   );
 };
