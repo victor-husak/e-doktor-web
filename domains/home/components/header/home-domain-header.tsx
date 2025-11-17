@@ -1,9 +1,10 @@
 import NextLink from "next/link";
-import NextImage from "next/image";
 
 import { Button } from "@/components";
 
 import { BookIcon, DownloadIcon } from "@/icons";
+
+import * as Components from "./components";
 
 import { clsx } from "clsx";
 
@@ -16,7 +17,10 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
 ): React.JSX.Element => {
   return (
     <header
-      className={clsx(props.className, "container-small relative bg-[#EFEFF0]")}
+      className={clsx(
+        props.className,
+        "container-small relative overflow-hidden bg-[#EFEFF0]",
+      )}
     >
       {/* Content */}
       <div className="flex max-w-[380px] flex-col items-start pt-[135px] pb-[22px]">
@@ -69,13 +73,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
       </div>
 
       {/* Background */}
-      <NextImage
-        className="absolute inset-0 -top-[38px] h-[calc(100%+38px)] object-contain object-bottom"
-        width={2732}
-        height={1080}
-        src="/images/home/header1.webp"
-        alt="header"
-      />
+      <Components.Background />
     </header>
   );
 };

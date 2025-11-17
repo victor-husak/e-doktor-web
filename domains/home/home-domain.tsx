@@ -13,6 +13,8 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
     <div className={clsx(props.className, "")}>
       <Components.Header />
 
+      <Components.Points className="border-border border-b" />
+
       <Components.Features className="mb-[50px]" />
     </div>
   );
