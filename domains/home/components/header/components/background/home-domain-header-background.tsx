@@ -13,7 +13,7 @@ export type HomeDomainHeaderBackgroundProps = {
 export const HomeDomainHeaderBackground: React.FC<
   HomeDomainHeaderBackgroundProps
 > = (props): React.JSX.Element => {
-  useHomeDomainHeader(props);
+  useHomeDomainHeader();
 
   return (
     <NextImage
