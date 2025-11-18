@@ -14,7 +14,7 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
     <section
       className={clsx(
         props.className,
-        "container grid grid-cols-3 gap-5 pt-5 pb-[87px]",
+        "relative container grid grid-cols-3 gap-5 pt-5 pb-[87px]",
       )}
     >
       <Components.Item
@@ -34,6 +34,9 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
         description="Manage schedules and availability, and enable native appointment booking for customers"
         IconComponent={<Icons.Personalised />}
       />
+
+      {/* Icon */}
+      <Icons.Star className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" />
     </section>
   );
 };

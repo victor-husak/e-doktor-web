@@ -13,7 +13,7 @@ export const HomeDomainFeatures: React.FC<HomeDomainFeaturesProps> = (
 ): React.JSX.Element => {
   return (
     <Section
-      className={clsx(props.className, "")}
+      className={clsx(props.className, "relative")}
       HeaderComponent={
         <SectionHeader
           title="Other features"
@@ -21,8 +21,10 @@ export const HomeDomainFeatures: React.FC<HomeDomainFeaturesProps> = (
         />
       }
     >
+      {/* Content */}
       <div className="grid grid-cols-3 gap-x-10">
         {items.map((item) => (
+          // Item
           <Components.Item
             className="nth-last-[-n+3]:border-b"
             title={item.title}

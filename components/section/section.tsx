@@ -8,9 +8,7 @@ export type SectionProps = {
 
 export const Section: React.FC<SectionProps> = (props): React.JSX.Element => {
   return (
-    <section
-      className={clsx(props.className, "container flex flex-col items-center")}
-    >
+    <section className={clsx(props.className, "container flex flex-col")}>
       {/* Header */}
       {props.HeaderComponent}
 
