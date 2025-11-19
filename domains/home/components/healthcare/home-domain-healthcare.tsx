@@ -2,6 +2,8 @@ import NextImage from "next/image";
 
 import { Section, SectionHeader, Button } from "@/components";
 
+import { VideoIcon, DownloadIcon } from "@/icons";
+
 import * as Components from "./components";
 import * as Icons from "./icons";
 
@@ -30,9 +32,18 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           description="A unified, modern app that connects patients with doctors, clinics, prescriptions, vaccination records, and digital health services — all in one simple experience."
           ActionComponent={
             <>
-              <Button title="Book a demo" animation="scale" />
+              <Button
+                animation="scale"
+                title="Book a demo"
+                IconComponent={<VideoIcon />}
+              />
 
-              <Button variant="second" title="Download app" animation="scale" />
+              <Button
+                variant="second"
+                animation="scale"
+                title="Download app"
+                IconComponent={<DownloadIcon color="#1D1D1F" />}
+              />
             </>
           }
         />

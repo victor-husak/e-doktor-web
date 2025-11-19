@@ -15,7 +15,7 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
     <section
       className={clsx(
         props.className,
-        "container flex justify-between gap-[50px] pt-[100px] pb-20",
+        "container flex justify-between gap-[50px] pt-[100px]",
       )}
     >
       {/* Content */}
