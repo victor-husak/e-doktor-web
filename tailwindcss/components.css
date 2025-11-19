@@ -1,6 +1,6 @@
 @layer components {  
   .button {
-    @apply z-1 relative flex items-center justify-center gap-2.5 transition-all rounded-full;
+    @apply z-1 relative flex items-center justify-center gap-2.5 transition-all rounded-full cursor-pointer;
 
     &::before {
       @apply content-[""] absolute inset-0 -z-1 transition-all rounded-[inherit];

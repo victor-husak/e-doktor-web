@@ -17,6 +17,8 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
 
       <Components.Healthcare className="border-border border-b pb-[90px]" />
 
+      <Components.Suite />
+
       <Components.Features className="mb-[50px]" />
     </div>
   );

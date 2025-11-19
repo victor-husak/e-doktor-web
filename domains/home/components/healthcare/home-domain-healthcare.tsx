@@ -30,9 +30,9 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           description="A unified, modern app that connects patients with doctors, clinics, prescriptions, vaccination records, and digital health services — all in one simple experience."
           ActionComponent={
             <>
-              <Button title="Book a demo" />
+              <Button title="Book a demo" animation="scale" />
 
-              <Button variant="second" title="Download app" />
+              <Button variant="second" title="Download app" animation="scale" />
             </>
           }
         />
@@ -41,7 +41,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
       {/* Container */}
       <div className="relative flex justify-between rounded-xl bg-[#E0D9FF] pt-[30px] pr-[30px] pb-10 pl-[50px]">
         {/* Content */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start pt-2.5">
           {/* Tag */}
           <div className="mb-[25px] flex items-center gap-2 rounded-full bg-[#7C78ED] px-2.5 py-[5px] text-[12px]/[14px] font-medium tracking-[-.016em] text-white">
             <Icons.Booking />
@@ -67,7 +67,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           <Components.List />
 
           {/* Actions */}
-          <div className="mt-10 flex gap-1.5">
+          <div className="mt-auto flex gap-1.5">
             <Components.Arrow className="rotate-180" />
 
             <Components.Arrow />
