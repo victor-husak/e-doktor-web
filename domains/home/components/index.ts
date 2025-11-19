@@ -3,4 +3,4 @@ export { HomeDomainFeatures as Features } from "./features";
 export { HomeDomainPoints as Points } from "./points";
 export { HomeDomainHealthcare as Healthcare } from "./healthcare";
 export { HomeHeaderSuite as Suite } from "./suite";
-export { HomeDomainVaccinations as Vaccinations } from "./vaccinations";
+export { HomeDomainServises as Servises } from "./servises";

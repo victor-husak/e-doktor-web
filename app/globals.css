@@ -6,6 +6,8 @@
 :root {
   --background: #ffffff;
   --foreground: #2C2C2C;
+
+  --transition-img: transform 0.34s cubic-bezier(0.03, 0.63, 0.52, 1.03);
 }
 
 @theme inline {

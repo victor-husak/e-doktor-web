@@ -50,7 +50,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
       }
     >
       {/* Container */}
-      <div className="relative flex justify-between rounded-xl bg-[#E0D9FF] pt-[30px] pr-[30px] pb-10 pl-[50px]">
+      <div className=" group relative flex justify-between rounded-xl bg-[#E0D9FF] pt-[30px] pr-[30px] pb-10 pl-[50px]">
         {/* Content */}
         <div className="flex flex-col items-start pt-2.5">
           {/* Tag */}
@@ -86,13 +86,16 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
         </div>
 
         {/* Preview */}
-        <NextImage
-          className="h-[390px] w-auto rounded-lg bg-[#D4CDF4] object-contain"
-          src="/images/home/healthcare.webp"
-          width={1470}
-          height={1170}
-          alt="preview"
-        />
+
+        <div className="h-[390px] overflow-hidden rounded-lg bg-[#D4CDF4]">
+          <NextImage
+            className="transition-img h-full w-auto group-hover:transform-[scale(1.03)]"
+            src="/images/home/healthcare.webp"
+            width={1470}
+            height={1170}
+            alt="preview"
+          />
+        </div>
 
         {/* Background */}
         <NextImage

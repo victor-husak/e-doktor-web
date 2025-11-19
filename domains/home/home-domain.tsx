@@ -19,7 +19,7 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
 
       <Components.Suite />
 
-      {/* <Components.Vaccinations /> */}
+      <Components.Servises />
 
       <Components.Features className="mb-[50px]" />
     </div>

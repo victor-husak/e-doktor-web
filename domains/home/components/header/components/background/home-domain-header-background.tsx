@@ -22,9 +22,9 @@ export const HomeDomainHeaderBackground: React.FC<
         props.className,
         "absolute inset-0 -top-[38px] h-[calc(100%+38px)] object-contain object-bottom will-change-transform",
       )}
-      width={2732}
-      height={1080}
-      src="/images/home/header1.webp"
+      width={6200}
+      height={2451}
+      src="/images/home/main_page_wallpaper.webp"
       alt="header"
     />
   );

@@ -15,7 +15,9 @@ export const HomeDomainHealthcareList: React.FC<
         <li className="relative flex items-center gap-[15px]" key={index}>
           <Icons.Star />
 
-          <Icons.Texture className="absolute -bottom-px left-[3px] -translate-x-1/2 translate-y-full" />
+          {index < items.length - 1 && (
+            <Icons.Texture className="absolute -bottom-px left-[3px] -translate-x-1/2 translate-y-full" />
+          )}
 
           <span className="text-[14px]/[16px] tracking-[-.008em] text-[#7C78ED]">
             {item}
