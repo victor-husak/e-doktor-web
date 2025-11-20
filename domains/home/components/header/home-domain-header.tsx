@@ -25,7 +25,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
       {/* Content */}
       <div className="flex max-w-[380px] flex-col items-start pt-[135px] pb-[22px]">
         {/* Tag */}
-        <div className="mb-[21px] rounded-full bg-[#E2E2E2] px-2 py-[5px] text-[12px]/[14px] tracking-[-.016em]">
+        <div className="mb-[21px] rounded-full bg-[#E2E2E2] px-2 py-[5px] text-[12px]/[14px] font-medium tracking-[-.016em]">
           <span>Integrated with e-Albania</span>
         </div>
 
@@ -36,7 +36,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
         </h1>
 
         {/* Description */}
-        <p className="mb-[25px] text-[14px]/[18px]">
+        <p className="mb-[25px] text-[14px]/[18px] text-[#828891]">
           From appointments to prescriptions, e-Doktor helps you stay connected
           with your doctors and manage your healthcare easily and securely in
           Albania.
@@ -51,6 +51,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
           />
 
           <Button
+            className="before:bg-[#E2E2E2]"
             variant="second"
             title="Book a demo"
             animation="scale"

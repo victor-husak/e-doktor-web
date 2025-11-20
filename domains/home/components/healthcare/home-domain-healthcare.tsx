@@ -40,7 +40,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
 
               <Button
                 variant="second"
-                animation="scale"
+                animation="background"
                 title="Download app"
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
               />

@@ -22,17 +22,38 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
       <div className="flex flex-1 flex-col">
         {/* Info */}
         <div>
-          {/* Title */}
-          <h2
+          {/* Header */}
+          <div
             className={clsx(
-              "font-sf-compact-display mb-[25px] text-[38px]/[45px] font-semibold tracking-[-.024em]",
-              "[&>span]:text-[#AEB2C1]",
+              "relative mb-[25px] flex flex-col items-start pl-[30px]",
+              "before:absolute before:top-0 before:bottom-0 before:-left-0.5 before:w-0.5 before:rounded-b-sm before:bg-[#7C78ED]",
             )}
           >
-            A complete suite
-            <br />
-            <span>of healthcare features</span>
-          </h2>
+            {/* border-l-2 border-[#7C78ED] */}
+            {/* Tag */}
+            <div
+              className={clsx(
+                "mb-2.5 flex items-center rounded-full bg-[#7C78ED] px-2 py-1",
+                props.className,
+              )}
+            >
+              <span className="text-[12px]/[14px] font-medium tracking-[-.008em] text-white">
+                What we offer
+              </span>
+            </div>
+
+            {/* Title */}
+            <h2
+              className={clsx(
+                "font-sf-compact-display text-[38px]/[45px] font-semibold tracking-[-.024em]",
+                "[&>span]:text-[#AEB2C1]",
+              )}
+            >
+              A complete suite
+              <br />
+              <span>of healthcare features</span>
+            </h2>
+          </div>
 
           {/* Description */}
           <p className="max-w-[560px] text-[15px]/[20px] text-[#828891]">

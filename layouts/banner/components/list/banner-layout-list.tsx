@@ -23,7 +23,9 @@ export const BannerLayoutList: React.FC<BannerLayoutListProps> = (
             />
           )}
 
-          <span className="text-[14px]/[16px] tracking-[-.008em]">{item}</span>
+          <span className="link-dashed text-[14px]/[16px] tracking-[-.008em] [--link-dashed-border-color:currentColor]">
+            {item}
+          </span>
         </li>
       ))}
     </ul>

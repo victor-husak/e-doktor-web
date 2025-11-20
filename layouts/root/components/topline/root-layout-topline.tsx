@@ -19,7 +19,15 @@ export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
       {/* Description */}
       <p className="text-topline-foreground absolute left-1/2 -translate-x-1/2 text-[12px]/[14px]">
         Book appointments, manage prescriptions, and access your public health
-        data — <span className="link-dashed text-white">all in one app</span>
+        data —{" "}
+        <span
+          className={clsx(
+            "link-dashed cursor-pointer transition-colors",
+            "hover:text-white",
+          )}
+        >
+          all in one app
+        </span>
       </p>
 
       {/* Logo */}

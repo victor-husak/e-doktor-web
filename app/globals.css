@@ -27,6 +27,13 @@
   
   --font-sf-pro: var(--font-sf-pro);
   --font-sf-compact-display: var(--font-sf-compact-display);
+
+  @keyframes spin-custom {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  --animate-spin-custom: spin-custom var(--spin-speed, 3s) linear infinite;
 }
 
 body {

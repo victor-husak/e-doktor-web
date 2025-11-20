@@ -36,7 +36,7 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
       />
 
       {/* Icon */}
-      <Icons.Star className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" />
+      <Icons.Star className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 animate-(--animate-spin-custom)" />
     </section>
   );
 };

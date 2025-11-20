@@ -19,7 +19,7 @@ export const RootLayoutHeaderMenuItem: React.FC<
       className={clsx(
         props.className,
         "flex h-[29px] cursor-pointer items-center justify-between gap-1.5 rounded-full px-2.5 py-1.5 text-[14px]/[16px] tracking-[-.012em] transition-colors",
-        "hover:bg-[#EDEDEF]",
+        "hover:bg-border",
         { "text-white": props.variant === "invert" },
       )}
     >

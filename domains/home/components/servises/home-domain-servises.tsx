@@ -45,7 +45,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
 
               <Button
                 variant="second"
-                animation="scale"
+                animation="background"
                 title="Download app"
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
               />

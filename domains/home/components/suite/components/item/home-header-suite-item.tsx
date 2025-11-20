@@ -54,7 +54,9 @@ export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
 
       {/* Content */}
       <div {...getCollapseProps()}>
-        <p className="mr-10 pb-5 text-[14px]/[19px]">{props.description}</p>
+        <p className="mr-10 pb-5 text-[14px]/[19px] text-[#838993]">
+          {props.description}
+        </p>
       </div>
     </div>
   );

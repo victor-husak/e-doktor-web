@@ -29,6 +29,7 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
       {/* Action */}
       <Button
         title="Download App"
+        size="small"
         animation="scale"
         IconComponent={<DownloadIcon />}
       />

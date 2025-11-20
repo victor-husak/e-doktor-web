@@ -8,11 +8,11 @@
 
     /* size */
     &:where([data-size="base"]) {
-      @apply h-[35px] px-[15px] font-medium text-[12px]/[14px];
+      @apply h-[35px] px-[15px] font-medium text-[13px]/[15px];
     }
 
     &:where([data-size="small"]) {
-      @apply h-8 px-[15px] text-[13px]/[15px];
+      @apply h-8 px-[15px] text-[12px]/[14px];
     }
 /* 
     &:where([data-size="large"]) {
@@ -45,7 +45,7 @@
       @apply text-[#1D1D1F];
       
       &::before {
-        @apply bg-[#E2E2E2];
+        @apply bg-[#EDEDED];
       }
     }
 
@@ -70,6 +70,12 @@
 
      &:where([data-animation="darken"]) {
       @apply hover:brightness-97;
+    }
+
+    &:where([data-animation="background"]):where([data-variant="second"]) {
+      &:hover::before {
+        @apply bg-[#DFE0E2];
+      }
     }
 
     &:where([data-animation="scale"]) {

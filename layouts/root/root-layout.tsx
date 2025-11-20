@@ -16,7 +16,7 @@ export const RootLayout: React.FC<RootLayoutProps> = (
 
       <Components.Header className="sticky top-0 z-2" />
 
-      <Components.Info />
+      <Components.Info className="sticky top-[68px] z-2" />
 
       {props.children}
 
