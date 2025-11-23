@@ -171,12 +171,12 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           className="bg-[#7C78ED]! text-white"
           title={
             <>
-              <span className="text-[#BBB9F5]">Yuor digital</span>
+              <span className="text-[#BBB9F5]">Complete vaccination</span>
               <br />
-              vaccination hub
+              oversight
             </>
           }
-          description="Track, schedule, and manage all vaccinations for you and your family — fully digital, connected to Albania’s national immunization system."
+          description="Track your doses, access verified certificates, receive reminders, and share your medical records with clinics or schools."
           TagComponent={
             <BannerLayoutTag
               className="bg-white text-[#7C78ED]!"
@@ -197,9 +197,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="transition-img text-[#D4D3FF] [--link-dashed-border-color:#A29FF5]"
               items={[
-                "Automatically tracked vaccine schedule",
-                "Easy booking for any vaccine type",
-                "Instant digital certificates",
+                "Full vaccination history",
+                "Calendar of upcoming doses",
+                "Appointment scheduling",
               ]}
             />
           }
@@ -208,7 +208,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-white"
               variant="second"
               animation="scale"
-              title="Book a demo"
+              title="Watch presentation"
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }
@@ -265,12 +265,12 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           className="bg-[#F8E9EC]"
           title={
             <>
-              <span className="text-[#C9ABB3]">One-tap help</span>
+              <span className="text-[#C9ABB3]">National</span>
               <br />
-              when it matters most
+              Emergency (127/112)
             </>
           }
-          description="In urgent situations, every second matters. We instantly connect you to a doctor who can assess your condition, and coordinate help."
+          description="Smarter, faster emergency response. This improves response time, accuracy, and life-saving decision-making."
           TagComponent={
             <BannerLayoutTag
               className="bg-[#EBD9DE] text-[#323233]!"
@@ -291,9 +291,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="text-[#7E7375] [--link-dashed-border-color:#CCC3C5]"
               items={[
-                "Automatic location sharing",
-                "Direct connection with certified doctors",
-                "24/7 availability across the country",
+                "GPS location is shared",
+                "Medical history is displayed to authorized staff",
+                "Citizen identity is verified",
               ]}
             />
           }
@@ -302,7 +302,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-[#EBD8DD]"
               variant="second"
               animation="scale"
-              title="Book a demo"
+              title="Watch presentation"
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }
