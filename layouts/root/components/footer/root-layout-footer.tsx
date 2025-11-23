@@ -19,14 +19,21 @@ export const RootLayoutFooter: React.FC<RootLayoutFooterProps> = (
       <div
         className={clsx(
           props.className,
-          "border-footer-border flex border-b pt-15 pb-20",
+          "border-footer-border flex flex-col gap-10 border-b pt-15 pb-15",
+          "xl:flex-row xl:pb-20",
         )}
       >
         {/* Info */}
         <Components.Info />
 
         {/* Menu */}
-        <div className="ml-1 flex flex-1 justify-center gap-[70px]">
+        <div
+          className={clsx(
+            "grid flex-1 grid-cols-2 gap-x-[70px] gap-y-10",
+            "md:flex",
+            "xl:ml-1 xl:justify-center",
+          )}
+        >
           <Components.Menu title="Product" items={productOptions} />
 
           <Components.Menu title="Support" items={supportOptions} />

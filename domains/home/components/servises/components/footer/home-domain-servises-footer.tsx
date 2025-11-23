@@ -14,7 +14,8 @@ export const HomeDomainServisesFooter: React.FC<
       className={clsx(
         props.className,
         "[--link-dashed-border-color:#D1D3D9]",
-        "flex items-center justify-between border-b border-[#F4F5F7] pt-[27px] pb-[25px] text-[13px]/[16px] tracking-[-.008em] text-[#8E8C8A]",
+        "flex flex-col justify-between gap-y-2 border-b border-[#F4F5F7] pt-[27px] pb-[25px] text-[13px]/[16px] tracking-[-.008em] text-[#8E8C8A]",
+        "lg:flex-row lg:items-center",
         "[&>p>a]:text-[#2C2C2C] [&>p>a]:transition-opacity",
         "[&>p>a]:hover:opacity-70",
       )}

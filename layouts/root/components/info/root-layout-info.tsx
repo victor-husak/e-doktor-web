@@ -15,10 +15,10 @@ export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
     <div
       className={clsx(
         props.className,
-        "container flex items-center justify-center bg-[#7C78ED] py-3",
+        "container flex min-h-[38px] items-center justify-center bg-[#7C78ED] py-2",
       )}
     >
-      <p className="text-[12px]/[14px] text-white/80 [--link-dashed-border-color:rgba(255,255,255,0.5)]">
+      <p className="text-[12px]/[16px] text-white/80 [--link-dashed-border-color:rgba(255,255,255,0.5)]">
         Backed by{" "}
         <span className="link-dashed text-white">StartUp Albania</span> for
         implementing innovation in healthcare.{" "}

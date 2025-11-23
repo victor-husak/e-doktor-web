@@ -73,7 +73,12 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="group flex justify-between pt-[30px] pr-[30px] pb-10 pl-[50px]">
+              <div
+                className={clsx(
+                  "group flex flex-col justify-between gap-10 p-[30px] pb-25",
+                  "lg:flex-row lg:gap-0 lg:pt-[30px] lg:pb-10 lg:pl-[50px]",
+                )}
+              >
                 {/* Content */}
                 <div className="flex flex-col items-start pt-2.5">
                   {/* Tag */}
@@ -103,9 +108,14 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
                 </div>
 
                 {/* Preview */}
-                <div className="h-[390px] overflow-hidden rounded-lg bg-[#D4CDF4]">
+                <div
+                  className={clsx(
+                    "flex h-[300px] justify-center overflow-hidden rounded-lg bg-[#D4CDF4]",
+                    "lg:h-[390px]",
+                  )}
+                >
                   <NextImage
-                    className="h-full w-auto"
+                    className="h-full w-auto object-contain object-bottom"
                     src="/images/home/healthcare.webp"
                     width={1470}
                     height={1170}
@@ -118,7 +128,13 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           ))}
 
           {/* Actions */}
-          <div className="absolute bottom-10 left-[50px] z-1 mt-auto flex gap-1.5">
+          {/* left-[50px] */}
+          <div
+            className={clsx(
+              "absolute bottom-10 left-[30px] z-1 mt-auto flex gap-1.5",
+              "lg:left-[50px]",
+            )}
+          >
             <Components.Arrow className="rotate-180" ref={prevRef} />
 
             <Components.Arrow ref={nextRef} />

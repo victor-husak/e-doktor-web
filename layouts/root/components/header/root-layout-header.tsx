@@ -24,7 +24,9 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
       <Logo />
 
       {/* Menu */}
-      <Components.Menu className="absolute left-1/2 -translate-x-1/2" />
+      <Components.Menu
+        className={clsx("absolute left-1/2 hidden -translate-x-1/2", "lg:flex")}
+      />
 
       {/* Action */}
       <Button

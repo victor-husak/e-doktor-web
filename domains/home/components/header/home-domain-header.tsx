@@ -23,7 +23,12 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
       )}
     >
       {/* Content */}
-      <div className="flex max-w-[380px] flex-col items-start pt-[135px] pb-[22px]">
+      <div
+        className={clsx(
+          "relative z-1 flex max-w-[380px] flex-col items-start pt-20 pb-[22px]",
+          "lg:pt-[135px]",
+        )}
+      >
         {/* Tag */}
         <div className="mb-[21px] rounded-full bg-[#E2E2E2] px-2 py-[5px] text-[12px]/[14px] font-medium tracking-[-.016em]">
           <span>Integrated with e-Albania</span>
@@ -74,7 +79,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
       </div>
 
       {/* Background */}
-      <Components.Background />
+      <Components.Background className={clsx("hidden", "lg:flex")} />
     </header>
   );
 };

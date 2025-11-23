@@ -23,7 +23,12 @@ export const HomeDomainFeatures: React.FC<HomeDomainFeaturesProps> = (
       }
     >
       {/* Content */}
-      <div className="grid grid-cols-3 gap-x-10">
+      <div
+        className={clsx(
+          "grid grid-cols-1 gap-x-10",
+          "md:grid-cols-2 lg:grid-cols-3",
+        )}
+      >
         {items.map((item) => (
           // Item
           <Components.Item

@@ -17,7 +17,8 @@ export const BannerLayout: React.FC<BannerLayoutProps> = (
   return (
     <div
       className={clsx(
-        "group relative flex justify-between rounded-xl bg-[#E0D9FF] pt-[30px] pr-[30px] pb-10 pl-10 text-[#3A364D]",
+        "group relative flex justify-between gap-5 rounded-xl bg-[#E0D9FF] pt-[30px] pr-[30px] pb-10 pl-[30px] text-[#3A364D]",
+        "xl:pl-10",
         props.className,
       )}
     >
@@ -44,7 +45,12 @@ export const BannerLayout: React.FC<BannerLayoutProps> = (
         )}
 
         {/* Description */}
-        <p className="mb-[30px] max-w-[580px] text-[14px]/[19px] tracking-[-.008em]">
+        <p
+          className={clsx(
+            "mb-[30px] max-w-[370px] text-[14px]/[19px] tracking-[-.008em]",
+            "xl:max-w-[580px]",
+          )}
+        >
           {props.description}
         </p>
 

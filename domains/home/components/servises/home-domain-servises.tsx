@@ -55,9 +55,15 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
       }
     >
       {/* Content */}
-      <div className="grid grid-cols-3 grid-rows-[minmax(413px,auto)_auto] gap-5">
+      <div
+        className={clsx(
+          "grid grid-cols-1 grid-rows-1 gap-5",
+          "md:grid-cols-2",
+          "xl:grid-cols-3 xl:grid-rows-[minmax(413px,auto)_auto]",
+        )}
+      >
         <BannerLayout
-          className="col-span-2"
+          className="md:col-span-2"
           title={
             <>
               <span className="text-[#7C78ED]">Stay in control</span>
@@ -80,7 +86,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ListComponent={
             <BannerLayoutList
-              className="text-[#757190]"
+              className="text-[#7C78ED]! [--link-dashed-border-color:#BEB7F2]"
               items={[
                 "Instant scheduling for in-person & video visits",
                 "Full details: doctor, facility, referral, coverage",
@@ -89,7 +95,12 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             />
           }
           ImageComponent={
-            <div className="h-[390px] overflow-hidden rounded-lg bg-[#D4CDF4]">
+            <div
+              className={clsx(
+                "hidden h-[390px] w-auto overflow-hidden rounded-lg bg-[#D4CDF4]",
+                "md:flex",
+              )}
+            >
               <NextImage
                 className="transition-img h-full w-auto group-hover:transform-[scale(1.03)]"
                 src="/images/home/vaccinations/1.webp"
@@ -137,7 +148,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ListComponent={
             <BannerLayoutList
-              className="text-[#858A9B]"
+              className="text-[#858A9B] [--link-dashed-border-color:#D2D4D8]"
               items={[
                 "Unified timeline of your care",
                 "Smart filters and instant search",
@@ -184,7 +195,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ListComponent={
             <BannerLayoutList
-              className="transition-img text-[#D4D3FF]"
+              className="transition-img text-[#D4D3FF] [--link-dashed-border-color:#A29FF5]"
               items={[
                 "Automatically tracked vaccine schedule",
                 "Easy booking for any vaccine type",
@@ -231,7 +242,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ListComponent={
             <BannerLayoutList
-              className="text-[#858A9B]"
+              className="text-[#858A9B] [--link-dashed-border-color:#D2D4D8]"
               items={[
                 "Сommunication with calls, video, and chat",
                 "Booking with real-time availability",
@@ -278,7 +289,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ListComponent={
             <BannerLayoutList
-              className="text-[#7E7375]"
+              className="text-[#7E7375] [--link-dashed-border-color:#CCC3C5]"
               items={[
                 "Automatic location sharing",
                 "Direct connection with certified doctors",

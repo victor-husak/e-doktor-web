@@ -13,11 +13,17 @@ export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
     <div
       className={clsx(
         props.className,
-        "bg-topline-background relative container flex h-[38px] items-center justify-end",
+        "bg-topline-background relative container flex min-h-[38px] items-center justify-between gap-2 py-1.5",
+        "xl:justify-end",
       )}
     >
       {/* Description */}
-      <p className="text-topline-foreground absolute left-1/2 -translate-x-1/2 text-[12px]/[14px]">
+      <p
+        className={clsx(
+          "text-topline-foreground text-[12px]/[16px]",
+          "xl:absolute xl:left-1/2 xl:-translate-x-1/2",
+        )}
+      >
         Book appointments, manage prescriptions, and access your public health
         data —{" "}
         <span

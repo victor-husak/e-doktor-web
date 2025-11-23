@@ -16,7 +16,7 @@ export const RootLayoutFooterBottom: React.FC<RootLayoutFooterBottomProps> = (
     <div
       className={clsx(
         props.className,
-        "flex items-center pt-[21px] pb-6 text-[14px]/[16px] tracking-[-.008em] text-[#808181]",
+        "flex flex-wrap items-center gap-x-3 gap-y-[25] pt-[21px] pb-6 text-[14px]/[16px] tracking-[-.008em] text-[#808181]",
       )}
     >
       {/* social */}
@@ -32,12 +32,14 @@ export const RootLayoutFooterBottom: React.FC<RootLayoutFooterBottomProps> = (
       <div className="bg-footer-border mx-[15px] h-2.5 w-px" />
 
       {/* copyright */}
-      <p className="mr-[25px]">2025 eDoktor. All rights reserved.</p>
+      <p className={clsx("order-last mr-[25px]", "md:order-0")}>
+        2025 eDoktor. All rights reserved.
+      </p>
 
       {/* menu */}
       <ul
         className={clsx(
-          "flex items-center gap-6",
+          "flex flex-wrap items-center gap-x-[25] gap-y-[15px]",
           "[&>li]:transition-colors [&>li]:hover:text-white",
         )}
       >

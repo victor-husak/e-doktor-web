@@ -7,6 +7,7 @@ import { clsx } from "clsx";
 export type FaqsSectionProps = {
   className?: React.ComponentProps<"section">["className"];
   id?: React.ComponentProps<"section">["id"];
+  reverse?: boolean;
   tag: React.ReactNode;
   title: React.ReactNode;
   description: React.ReactNode;
@@ -21,12 +22,17 @@ export const FaqsSection: React.FC<FaqsSectionProps> = (
       id={props.id}
       className={clsx(
         props.className,
-        "container flex justify-between gap-[50px] pt-[100px]",
+        "container flex flex-col-reverse justify-between gap-5 pt-[100px]",
+        "xl:flex-row-reverse xl:gap-[50px]",
       )}
     >
       {/* Preview */}
       <NextImage
-        className="w-[630px] rounded-lg bg-[#F5F5F7] object-contain object-center"
+        className={clsx(
+          "mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
+          "lg:max-h-[400px] lg:max-w-full",
+          "xl:max-h-none xl:max-w-[630px]",
+        )}
         src="/images/home/suite.webp"
         width={1470}
         height={1170}
@@ -34,9 +40,9 @@ export const FaqsSection: React.FC<FaqsSectionProps> = (
       />
 
       {/* Content */}
-      <div className="flex flex-1 flex-col">
+      <div className={clsx("mb-5 flex flex-1 flex-col", "xl:mb-0")}>
         {/* Info */}
-        <div>
+        <div className="mb-10">
           {/* Header */}
           <div
             className={clsx(

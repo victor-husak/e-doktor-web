@@ -14,7 +14,8 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
     <section
       className={clsx(
         props.className,
-        "relative container grid grid-cols-3 gap-5 pt-5 pb-[87px]",
+        "relative container grid grid-cols-1 gap-5 pt-5 pb-[87px]",
+        "sm:grid-cols-2 lg:grid-cols-3",
       )}
     >
       <Components.Item

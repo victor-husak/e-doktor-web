@@ -13,7 +13,10 @@ export const BannerLayoutList: React.FC<BannerLayoutListProps> = (
   return (
     <ul className={clsx(props.className, "mb-auto flex flex-col gap-3")}>
       {props.items.map((item, index) => (
-        <li className="relative flex items-center gap-[15px]" key={index}>
+        <li
+          className="relative my-[-2.5px] flex items-center gap-[15px]"
+          key={index}
+        >
           <Icons.Star />
 
           {index < props.items.length - 1 && (
@@ -23,7 +26,7 @@ export const BannerLayoutList: React.FC<BannerLayoutListProps> = (
             />
           )}
 
-          <span className="link-dashed text-[14px]/[16px] tracking-[-.008em] [--link-dashed-border-color:currentColor]">
+          <span className="link-dashed text-[14px]/[21px] tracking-[-.008em]">
             {item}
           </span>
         </li>

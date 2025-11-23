@@ -12,14 +12,17 @@ export const HomeDomainHealthcareList: React.FC<
   return (
     <ul className={clsx(props.className, "flex flex-col gap-3")}>
       {items.map((item, index) => (
-        <li className="relative flex items-center gap-[15px]" key={index}>
+        <li
+          className="relative my-[-2.5px] flex items-center gap-[15px]"
+          key={index}
+        >
           <Icons.Star />
 
           {index < items.length - 1 && (
             <Icons.Texture className="absolute -bottom-px left-[3px] -translate-x-1/2 translate-y-full" />
           )}
 
-          <span className="link-dashed text-[14px]/[16px] tracking-[-.008em] text-[#7C78ED] [--link-dashed-border-color:currentColor]">
+          <span className="link-dashed text-[14px]/[21px] tracking-[-.008em] text-[#7C78ED] [--link-dashed-border-color:#BEB7F2]">
             {item}
           </span>
         </li>

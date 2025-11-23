@@ -23,7 +23,8 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
 
   return (
     <FaqsSection
-      className="scroll-mt-15 flex-row-reverse"
+      reverse
+      className="scroll-mt-15"
       id="what-we-offer"
       tag="What we offer"
       title={
@@ -52,7 +53,7 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
         </>
       }
     >
-      <div className="mt-[69px]">
+      <div className="xl:mt-[69px]">
         {items.map((item, index) => (
           <FaqsSectionItem
             className={clsx({ "border-t": index === 0 })}
@@ -70,12 +71,14 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
               )}
             >
               {/* Title */}
-              <p className="text-[14px]/[16px] text-[#838993]">
+              <p className="mr-10 text-[14px]/[20px] text-[#838993]">
                 Citizens can communicate with their family doctor through:
               </p>
 
               {/* Grid */}
-              <div className="grid grid-cols-2 gap-2.5">
+              <div
+                className={clsx("grid grid-cols-1 gap-2.5", "sm:grid-cols-2")}
+              >
                 <Components.Item />
 
                 <Components.Item />
