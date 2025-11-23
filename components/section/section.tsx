@@ -1,18 +1,25 @@
 import { clsx } from "clsx";
 
-export type SectionProps = {
+export type SectionProps = React.ComponentProps<"section"> & {
   className?: string;
   children: React.ReactNode;
   HeaderComponent: React.ReactNode;
 };
 
-export const Section: React.FC<SectionProps> = (props): React.JSX.Element => {
+export const Section: React.FC<SectionProps> = ({
+  children,
+  HeaderComponent,
+  ...otherProps
+}): React.JSX.Element => {
   return (
-    <section className={clsx(props.className, "container flex flex-col")}>
+    <section
+      {...otherProps}
+      className={clsx(otherProps.className, "container flex flex-col")}
+    >
       {/* Header */}
-      {props.HeaderComponent}
+      {HeaderComponent}
 
-      {props.children}
+      {children}
     </section>
   );
 };

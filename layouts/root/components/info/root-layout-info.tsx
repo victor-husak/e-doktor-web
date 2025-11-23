@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 
-import * as Icons from "./icons";
+import { PlusIcon } from "@/icons";
 
 import { clsx } from "clsx";
 
@@ -31,7 +31,7 @@ export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
         >
           <span className="link-dashed text-white">Read further</span>
 
-          <Icons.Plus />
+          <PlusIcon />
         </NextLink>
       </p>
     </div>

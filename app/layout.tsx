@@ -2,6 +2,8 @@ import { RootLayout } from "@/layouts/root";
 
 import { SFProText, SFCompactDisplay } from "./fonts";
 
+import { CrispLoader } from "./scripts/crisp";
+
 import { clsx } from "clsx";
 
 import "./globals.css";
@@ -31,6 +33,8 @@ export default function RootLayoutPage({
       >
         <RootLayout>{children}</RootLayout>
       </body>
+
+      <CrispLoader />
     </html>
   );
 }

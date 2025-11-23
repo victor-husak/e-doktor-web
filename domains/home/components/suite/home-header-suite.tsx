@@ -1,6 +1,8 @@
-import NextImage from "next/image";
+"use client";
 
-import * as Components from "./components";
+import { FaqsSection, FaqsSectionItem } from "@/sections/faqs";
+
+import { useHomeHeaderSuite } from "./home-header-suite.hook";
 
 import { clsx } from "clsx";
 
@@ -11,81 +13,37 @@ export type HomeHeaderSuiteProps = {
 export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
   props,
 ): React.JSX.Element => {
+  const { activeId, onChangeActiveId } = useHomeHeaderSuite();
+
   return (
-    <section
-      className={clsx(
-        props.className,
-        "container flex justify-between gap-[50px] pt-[100px]",
-      )}
+    <FaqsSection
+      className="scroll-mt-15"
+      id="who-we-help"
+      tag="Who we help?"
+      title={
+        <>
+          A complete suite
+          <br />
+          <span>of healthcare features</span>
+        </>
+      }
+      description="eDoktor gives patients instant access to essential healthcare services — all in one easy-to-use app. From appointment booking to digital prescriptions, the app is built to modernize the entire care journey and reduce administrative workload for clinics."
     >
-      {/* Content */}
-      <div className="flex flex-1 flex-col">
-        {/* Info */}
-        <div>
-          {/* Header */}
-          <div
-            className={clsx(
-              "relative mb-[25px] flex flex-col items-start pl-[30px]",
-              "before:absolute before:top-0 before:bottom-0 before:-left-0.5 before:w-0.5 before:rounded-b-sm before:bg-[#7C78ED]",
-            )}
-          >
-            {/* border-l-2 border-[#7C78ED] */}
-            {/* Tag */}
-            <div
-              className={clsx(
-                "mb-2.5 flex items-center rounded-full bg-[#7C78ED] px-2 py-1",
-                props.className,
-              )}
-            >
-              <span className="text-[12px]/[14px] font-medium tracking-[-.008em] text-white">
-                What we offer
-              </span>
-            </div>
-
-            {/* Title */}
-            <h2
-              className={clsx(
-                "font-sf-compact-display text-[38px]/[45px] font-semibold tracking-[-.024em]",
-                "[&>span]:text-[#AEB2C1]",
-              )}
-            >
-              A complete suite
-              <br />
-              <span>of healthcare features</span>
-            </h2>
-          </div>
-
-          {/* Description */}
-          <p className="max-w-[560px] text-[15px]/[20px] text-[#828891]">
-            eDoktor gives patients instant access to essential healthcare
-            services — all in one easy-to-use app. From appointment booking to
-            digital prescriptions, the app is built to modernize the entire care
-            journey and reduce administrative workload for clinics.
+      {items.map((item, index) => (
+        <FaqsSectionItem
+          className={clsx({ "border-t": index === 0 })}
+          id={item.id}
+          title={item.title}
+          active={item.id === activeId}
+          key={item.id}
+          onOpen={onChangeActiveId}
+        >
+          <p className="mr-10 pb-5 text-[14px]/[19px] text-[#838993]">
+            {item.description}
           </p>
-        </div>
-
-        {/* Items */}
-        <div className="mt-auto">
-          {items.map((item, index) => (
-            <Components.Item
-              className={clsx({ "border-t": index === 0 })}
-              title={item.title}
-              description={item.description}
-              key={item.id}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Preview */}
-      <NextImage
-        className="h-[620px] w-auto rounded-lg bg-[#F5F5F7] object-contain"
-        src="/images/home/suite.webp"
-        width={1470}
-        height={1170}
-        alt="preview"
-      />
-    </section>
+        </FaqsSectionItem>
+      ))}
+    </FaqsSection>
   );
 };
 

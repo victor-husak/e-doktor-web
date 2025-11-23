@@ -13,7 +13,8 @@ export const HomeDomainFeatures: React.FC<HomeDomainFeaturesProps> = (
 ): React.JSX.Element => {
   return (
     <Section
-      className={clsx(props.className, "relative")}
+      className={clsx(props.className, "relative scroll-mt-15")}
+      id="features"
       HeaderComponent={
         <SectionHeader
           title="Other features"

@@ -1,6 +1,12 @@
 import { SVGProps } from "react";
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={10} height={10} {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    viewBox="0 0 10 10"
+    {...props}
+  >
     <g fill="#7c78ed">
       <path d="M9.573 2.886a.425.425 0 0 1-.3-.125L7.239.729a.427.427 0 0 1 .6-.6l2.033 2.033a.427.427 0 0 1-.3.729Z" />
       <path d="M6.271 4.156a.427.427 0 0 1-.3-.729L8.258 1.14a.427.427 0 0 1 .6.6L6.573 4.031a.425.425 0 0 1-.302.125Z" />

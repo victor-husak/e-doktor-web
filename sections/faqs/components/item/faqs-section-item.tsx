@@ -6,21 +6,21 @@ import { clsx } from "clsx";
 
 import { useCollapse } from "react-collapsed";
 
-import { useHomeHeaderSuiteItem } from "./home-header-suite-item.hook";
-
-export type HomeHeaderSuiteItemProps = {
+export type FaqsSectionItemProps = {
   className?: string;
+  id: number;
   title: string;
-  description: string;
+  active: boolean;
+  children: React.ReactNode;
+  onOpen: (id: number) => void;
 };
 
-export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
+export const FaqsSectionItem: React.FC<FaqsSectionItemProps> = (
   props,
 ): React.JSX.Element => {
-  const { active, onTrigger } = useHomeHeaderSuiteItem();
-
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({
+  const { getCollapseProps, isExpanded } = useCollapse({
     duration: 400,
+    isExpanded: props.active,
   });
 
   return (
@@ -28,9 +28,7 @@ export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
       {/* Header */}
       <div
         className="group flex h-[58px] cursor-pointer items-center justify-between"
-        {...getToggleProps({
-          onClick: onTrigger,
-        })}
+        onClick={() => props.onOpen(props.id)}
       >
         <span
           className={clsx(
@@ -53,11 +51,7 @@ export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
       </div>
 
       {/* Content */}
-      <div {...getCollapseProps()}>
-        <p className="mr-10 pb-5 text-[14px]/[19px] text-[#838993]">
-          {props.description}
-        </p>
-      </div>
+      <div {...getCollapseProps()}>{props.children}</div>
     </div>
   );
 };
