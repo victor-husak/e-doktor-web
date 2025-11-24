@@ -17,6 +17,7 @@ export const HomeDomainFeatures: React.FC<HomeDomainFeaturesProps> = (
       id="features"
       HeaderComponent={
         <SectionHeader
+          classNameDescription="max-w-[460px]"
           title="Other features"
           description="BeeHealthy is a configurable, white-label, digital healthcare SaaS platform with all the features for building a modern digital-physical service provision."
         />

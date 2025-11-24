@@ -27,6 +27,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
       className={clsx(props.className, "")}
       HeaderComponent={
         <SectionHeader
+          classNameDescription="max-w-[520px]"
           title={
             <>
               Vaccinations,

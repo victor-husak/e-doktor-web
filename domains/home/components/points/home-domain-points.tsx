@@ -1,6 +1,8 @@
 import * as Components from "./components";
 import * as Icons from "./icons";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type HomeDomainPointsProps = {
@@ -10,6 +12,8 @@ export type HomeDomainPointsProps = {
 export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("pages.home.points");
+
   return (
     <section
       className={clsx(
@@ -19,21 +23,21 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
       )}
     >
       <Components.Item
-        title="Book appointments"
-        description="Book and manage visits with your family doctor or specialist through the national healthcare system."
-        IconComponent={<Icons.Book />}
+        title={t("0.title")}
+        description={t("0.description")}
+        IconComponent={<Icons.Trust />}
       />
 
       <Components.Item
-        title="e-Prescriptions"
-        description="Request and renew your prescriptions online, linked directly to Albania’s national pharmacy network."
-        IconComponent={<Icons.EPrescriptions />}
+        title={t("1.title")}
+        description={t("1.description")}
+        IconComponent={<Icons.Modern />}
       />
 
       <Components.Item
-        title="Personalised health services"
-        description="Manage schedules and availability, and enable native appointment booking for customers"
-        IconComponent={<Icons.Personalised />}
+        title={t("2.title")}
+        description={t("2.description")}
+        IconComponent={<Icons.Connected />}
       />
 
       {/* Icon */}

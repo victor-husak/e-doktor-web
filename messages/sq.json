@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "eDoktor",
+    "description": "Platforma kombëtare digjitale e shëndetit e Shqipërisë"
+  },
+  "common": {
+    "actions": {
+      "watch-demo": "Shiko demonstrimin",
+      "download-app": "Shkarko aplikacionin",
+      "book-demo": "Rezervo një demonstrim"
+    }
+  },
+  "layout": {
+    "topline": {
+      "description": ["Rezervoni takime, menaxhoni recetat dhe qasuni të dhënave tuaja të shëndetit publik", "të gjitha në një aplikacion"]
+    },
+    "header":{
+      "menu": {
+        "what-we-offer": "Çfarë ofrojmë",
+        "who-we-help": "Kujt i ndihmojmë",
+        "features": "Veçoritë",
+        "contact-us": "Kontakto na"
+      }
+    },
+    "info": {
+      "description": ["Mbështetur nga", "StartUp Albania", "për implementimin e inovacionit në shëndetësi.", "Lexo më shumë"]
+    }
+  },
+  "pages": {
+    "home": {
+      "header": {
+        "title": ["Platforma kombëtare e",  "shëndetësisë dixhitale"],
+        "tag": "Mirësevini në eDoktor",
+        "description": "Një portë e vetme dixhitale që lidh qytetarët, mjekët dhe institucionet shëndetësore. Me teknologji moderne dhe siguri të lartë, eDoktor përmirëson mënyrën e aksesimit dhe menaxhimit të kujdesit shëndetësor në të gjithë vendin.",
+        "info": "Teknologjia që fuqizon institucionet. Dixhitalizimi që i shërben çdo qytetari. Lexoni më shumë në"
+      },
+      "points": [
+        {
+          "title": "Vija e Besueshmërisë",
+          "description": "E zhvilluar me standarde ndërkombëtare të IT shëndetësor, arkitekturë cloud të sigurt, kriptim të të dhënave dhe praktika moderne të transformimit dixhital."
+        },
+        {
+          "title": "Përvojë moderne e kujdesit shëndetësor",
+          "description": "Një platformë që thjeshton jetën e qytetarëve, përmirëson punën mjekësore dhe fuqizon institucionet shëndetësore me të dhëna dhe mjete dixhitale."
+        },
+        {
+          "title": "Platformë e vetme për çdo qytetar",
+          "description": "Me eDoctor, çdo qytetar fiton qasje të menjëhershme në Dosjen e tij të Plotë Shëndetësore Dixhitale, e cila ofron një pasqyrë të integruar të historikut shëndetësor."
+        }
+      ],
+      "healthcare": {
+        "title": ["Ekosistem modern", "shëndetësor për gjithë vendin"],
+        "description": "eDoktor është platforma më e avancuar dhe gjithëpërfshirëse e shëndetësisë dixhitale në Shqipëri, e krijuar për të unifikuar të gjitha shërbimet kryesore shëndetësore në një sistem të sigurt, efikas dhe të lehtë për t’u përdorur. Ajo fuqizon qytetarët, mbështet mjekët dhe forcon institucionet publike me teknologji të avancuar dhe të dhëna mjekësore në kohë reale."
+      },
+      "unified-suite": {
+        "header": {
+          "tag": "Çfarë ofrojmë",
+          "title": ["Një paketë e unifikuar", "shërbimesh shëndetësore dixhitale"],
+          "description": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur.",
+          "read-more": "Lexo më shumë",
+          "description-full": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
+        }
+      }
+    }
+  }
+}

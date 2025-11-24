@@ -12,6 +12,8 @@ import * as Icons from "./icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
+import { useTranslations } from "next-intl";
+
 import { useHomeDomainHealthcare } from "./home-domain-healthcare.hook";
 
 import { clsx } from "clsx";
@@ -25,6 +27,9 @@ export type HomeDomainHealthcareProps = {
 export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("pages.home.healthcare");
+  const tCommonActions = useTranslations("common.actions");
+
   const { prevRef, nextRef, onBeforeInit } = useHomeDomainHealthcare();
 
   return (
@@ -33,26 +38,27 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
       HeaderComponent={
         <SectionHeader
           className="pt-[27px] pb-20"
+          classNameDescription="max-w-[700px]"
           title={
             <>
-              Healthcare
+              {t("title.0")}
               <br />
-              <span>that feels easy</span>
+              <span>{t("title.1")}</span>
             </>
           }
-          description="A unified, modern app that connects patients with doctors, clinics, prescriptions, vaccination records, and digital health services — all in one simple experience."
+          description={t("description")}
           ActionComponent={
             <>
               <Button
                 animation="scale"
-                title="Book a demo"
+                title={tCommonActions("book-demo")}
                 IconComponent={<VideoIcon />}
               />
 
               <Button
                 variant="second"
                 animation="background"
-                title="Download app"
+                title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
               />
             </>

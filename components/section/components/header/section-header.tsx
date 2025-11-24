@@ -2,6 +2,7 @@ import { clsx } from "clsx";
 
 export type SectionHeaderProps = {
   className?: string;
+  classNameDescription?: string;
   title: React.ReactNode;
   description: string;
   ActionComponent?: React.ReactNode;
@@ -25,9 +26,10 @@ export const SectionHeader: React.FC<SectionHeaderProps> = (
       </h2>
 
       <p
-        className={
-          "max-w-[460px] text-center text-[15px]/[20px] text-[#828891]"
-        }
+        className={clsx(
+          "text-center text-[15px]/[20px] text-[#828891]",
+          props.classNameDescription,
+        )}
       >
         {props.description}
       </p>

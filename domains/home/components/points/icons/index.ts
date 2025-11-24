@@ -1,4 +1,4 @@
-export { default as Book } from "./book";
-export { default as EPrescriptions } from "./e-prescriptions";
-export { default as Personalised } from "./personalised";
+export { default as Trust } from "./trust";
+export { default as Modern } from "./modern";
+export { default as Connected } from "./connected";
 export { default as Star } from "./star";

@@ -1,7 +1,5 @@
 "use client";
 
-import NextImage from "next/image";
-
 import { clsx } from "clsx";
 
 export type FaqsSectionProps = {
@@ -12,6 +10,7 @@ export type FaqsSectionProps = {
   title: React.ReactNode;
   description: React.ReactNode;
   children: React.ReactNode;
+  PreviewComponent?: React.ReactNode;
 };
 
 export const FaqsSection: React.FC<FaqsSectionProps> = (
@@ -23,21 +22,13 @@ export const FaqsSection: React.FC<FaqsSectionProps> = (
       className={clsx(
         props.className,
         "container flex flex-col-reverse justify-between gap-5 pt-[100px]",
-        "xl:flex-row-reverse xl:gap-[50px]",
+        "xl:gap-[50px]",
+        { "xl:flex-row-reverse": props.reverse },
+        { "xl:flex-row": !props.reverse },
       )}
     >
       {/* Preview */}
-      <NextImage
-        className={clsx(
-          "mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
-          "lg:max-h-[400px] lg:max-w-full",
-          "xl:max-h-none xl:max-w-[630px]",
-        )}
-        src="/images/home/suite.webp"
-        width={1470}
-        height={1170}
-        alt="preview"
-      />
+      {props.PreviewComponent}
 
       {/* Content */}
       <div className={clsx("mb-5 flex flex-1 flex-col", "xl:mb-0")}>

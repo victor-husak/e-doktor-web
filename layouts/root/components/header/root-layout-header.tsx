@@ -4,6 +4,8 @@ import { DownloadIcon } from "@/icons";
 
 import * as Components from "./components";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type RootLayoutHeaderProps = {
@@ -13,6 +15,8 @@ export type RootLayoutHeaderProps = {
 export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
   props,
 ): React.JSX.Element => {
+  const tCommonActions = useTranslations("common.actions");
+
   return (
     <header
       className={clsx(
@@ -30,7 +34,7 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
 
       {/* Action */}
       <Button
-        title="Download App"
+        title={tCommonActions("download-app")}
         size="small"
         animation="scale"
         IconComponent={<DownloadIcon />}

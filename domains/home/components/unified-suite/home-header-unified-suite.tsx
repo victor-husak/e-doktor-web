@@ -1,12 +1,15 @@
 "use client";
 
 import NextLink from "next/link";
+import NextImage from "next/image";
 
 import { FaqsSection, FaqsSectionItem } from "@/sections/faqs";
 
 import { PlusIcon } from "@/icons";
 
 import * as Components from "./components";
+
+import { useTranslations } from "next-intl";
 
 import { useHomeHeaderUnifiedSuite } from "./home-header-unified-suite.hook";
 
@@ -19,26 +22,33 @@ export type HomeHeaderUnifiedSuiteProps = {
 export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
   props,
 ): React.JSX.Element => {
-  const { activeId, onChangeActiveId } = useHomeHeaderUnifiedSuite();
+  const t = useTranslations("pages.home.unified-suite");
+
+  const {
+    questions,
+    image,
+    activeId,
+    activeItemId,
+    onChangeActive,
+    onChangeActiveItem,
+  } = useHomeHeaderUnifiedSuite();
 
   return (
     <FaqsSection
       reverse
       className="scroll-mt-15"
       id="what-we-offer"
-      tag="What we offer"
+      tag={t("header.tag")}
       title={
         <>
-          A unified suite of
+          {t("header.title.0")}
           <br />
-          <span>digital health services</span>
+          <span>{t("header.title.1")}</span>
         </>
       }
       description={
         <>
-          eDoctor brings together all healthcare services into one seamless,
-          secure and user-friendly platform. Each service is designed to
-          simplify the patient journey, support medical professionals.{" "}
+          {t("header.description")}{" "}
           <NextLink
             className={clsx(
               "link-dashed inline-flex items-center gap-[5px] text-[#7C78ED] transition-opacity [--link-dashed-border-color:currentColor]",
@@ -46,22 +56,37 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
             )}
             href="/"
           >
-            <span>Read more</span>
+            <span>{t("header.read-more")}</span>
 
             <PlusIcon color="#7C78ED" />
           </NextLink>
         </>
       }
+      PreviewComponent={
+        image && (
+          <NextImage
+            className={clsx(
+              "mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
+              "lg:max-h-[400px] lg:max-w-full",
+              "xl:max-h-none xl:max-w-[630px]",
+            )}
+            src={image}
+            width={3780}
+            height={4140}
+            alt="preview"
+          />
+        )
+      }
     >
       <div className="xl:mt-[69px]">
-        {items.map((item, index) => (
+        {questions.map((question, index) => (
           <FaqsSectionItem
             className={clsx({ "border-t": index === 0 })}
-            title={item.title}
-            id={item.id}
-            active={item.id === activeId}
-            key={item.id}
-            onOpen={onChangeActiveId}
+            title={question.title}
+            id={question.id}
+            active={question.id === activeId}
+            key={question.id}
+            onOpen={() => onChangeActive(question)}
           >
             {/* Container */}
             <div
@@ -76,15 +101,20 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
               </p>
 
               {/* Grid */}
-              <div
-                className={clsx("grid grid-cols-1 gap-2.5", "sm:grid-cols-2")}
-              >
-                <Components.Item />
-
-                <Components.Item />
-
-                <Components.Item />
-              </div>
+              {!!question.items.length && (
+                <div
+                  className={clsx("grid grid-cols-1 gap-2.5", "sm:grid-cols-2")}
+                >
+                  {question.items?.map((item) => (
+                    <Components.Item
+                      data={item}
+                      active={activeItemId === item.id}
+                      key={item.id}
+                      onSelect={() => onChangeActiveItem(item)}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           </FaqsSectionItem>
         ))}
@@ -92,30 +122,3 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
     </FaqsSection>
   );
 };
-
-const items = [
-  {
-    id: 1,
-    title: "Appointment Booking",
-    description:
-      "Patients can schedule visits with doctors in seconds. Real-time availability, instant confirmations, and automated reminders ensure a smoother experience for everyone.",
-  },
-  {
-    id: 2,
-    title: "Vaccinations Module",
-    description:
-      "Patients can schedule visits with doctors in seconds. Real-time availability, instant confirmations, and automated reminders ensure a smoother experience for everyone.",
-  },
-  {
-    id: 3,
-    title: "Digital Prescriptions",
-    description:
-      "Patients can schedule visits with doctors in seconds. Real-time availability, instant confirmations, and automated reminders ensure a smoother experience for everyone.",
-  },
-  {
-    id: 4,
-    title: "Doctor Chat",
-    description:
-      "Patients can schedule visits with doctors in seconds. Real-time availability, instant confirmations, and automated reminders ensure a smoother experience for everyone.",
-  },
-];

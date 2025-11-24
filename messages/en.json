@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "eDoktor",
+    "description": "The national digital health platform of Albania"
+  },
+  "common": {
+    "actions": {
+      "watch-demo": "Watch a demo",
+      "download-app": "Download app",
+      "book-demo": "Book a demo"
+    }
+  },
+  "layout": {
+    "topline": {
+      "description": ["Book appointments, manage prescriptions, and access your public health data", "all in one app"]
+    },
+    "header": {
+      "menu": {
+        "what-we-offer": "What we offer",
+        "who-we-help": "Who we help",
+        "features": "Features",
+        "contact-us": "Contact us"
+      }
+    },
+    "info": {
+      "description": ["Backed by", "StartUp Albania", "for implementing innovation in healthcare.", "Read further"]
+    }
+  },
+  "pages": {
+    "home": {
+      "header": {
+        "title": ["Albania’s complete national",  "digital health platform"],
+        "tag": "Welcome to eDoktor",
+        "description": "A single, unified digital gateway where citizens, doctors, institutions, and emergency services connect seamlessly. Built with advanced technology, strong security, and a human-centered approach.",
+        "info": "Technology that strengthens institutions. Digitalization that empowers citizens. Read more on"
+      },
+      "points": [
+        {
+          "title": "Trust and credibility",
+          "description": "Developed using international health IT standards, secure cloud architecture, data encryption, and best practices in digital health transformation."
+        },
+        {
+          "title": "Modern healthcare experience",
+          "description": "A platform designed to simplify citizens’ lives, improve medical workflows, and empower Albania’s health institutions with real-time data and digital tools."
+        },
+        {
+          "title": "Connected with Digital Health Record",
+          "description": "With eDoctor, citizens gain immediate access to their complete Digital Health Record, offering a fully integrated overview of their health history."
+        }
+      ],
+      "healthcare": {
+        "title": ["A modern digital health", "ecosystem for the entire country"],
+        "description": "eDoctor is Albania’s most advanced and comprehensive digital health platform, designed to unify all major healthcare services into one secure, efficient, and user-friendly system. It empowers citizens, supports doctors, and strengthens public institutions through technology."
+      },
+      "unified-suite": {
+        "header": {
+          "tag": "What we offer",
+          "title": ["A unified suite of", "digital health services"],
+          "description": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals",
+          "read-more": "Read more",
+          "description-full": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals. The mobile app offers institutions the data they need to deliver efficient and high-quality care."
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import { Lang } from "@/components";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type RootLayoutToplineProps = {
@@ -9,6 +11,8 @@ export type RootLayoutToplineProps = {
 export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("layout.topline");
+
   return (
     <div
       className={clsx(
@@ -24,16 +28,8 @@ export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
           "xl:absolute xl:left-1/2 xl:-translate-x-1/2",
         )}
       >
-        Book appointments, manage prescriptions, and access your public health
-        data —{" "}
-        <span
-          className={clsx(
-            "link-dashed cursor-pointer transition-colors",
-            "hover:text-white",
-          )}
-        >
-          all in one app
-        </span>
+        {t("description.0")} —{" "}
+        <span className={clsx("link-dashed")}>{t("description.1")}</span>
       </p>
 
       {/* Logo */}

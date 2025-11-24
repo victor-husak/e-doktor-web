@@ -2,6 +2,8 @@ import NextLink from "next/link";
 
 import { PlusIcon } from "@/icons";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type RootLayoutInfoProps = {
@@ -11,6 +13,8 @@ export type RootLayoutInfoProps = {
 export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("layout.info");
+
   return (
     <div
       className={clsx(
@@ -19,9 +23,9 @@ export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
       )}
     >
       <p className="text-[12px]/[16px] text-white/80 [--link-dashed-border-color:rgba(255,255,255,0.5)]">
-        Backed by{" "}
-        <span className="link-dashed text-white">StartUp Albania</span> for
-        implementing innovation in healthcare.{" "}
+        {t("description.0")}{" "}
+        <span className="link-dashed text-white">{t("description.1")}</span>{" "}
+        {t("description.2")}{" "}
         <NextLink
           className={clsx(
             "inline-flex items-center gap-[5px] transition-opacity",
@@ -29,7 +33,7 @@ export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
           )}
           href="/"
         >
-          <span className="link-dashed text-white">Read further</span>
+          <span className="link-dashed text-white">{t("description.3")}</span>
 
           <PlusIcon />
         </NextLink>

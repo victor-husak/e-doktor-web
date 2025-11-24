@@ -1,5 +1,7 @@
 "use client";
 
+import NextImage from "next/image";
+
 import { FaqsSection, FaqsSectionItem } from "@/sections/faqs";
 
 import { useHomeHeaderSuite } from "./home-header-suite.hook";
@@ -28,6 +30,19 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
         </>
       }
       description="eDoktor gives patients instant access to essential healthcare services — all in one easy-to-use app. From appointment booking to digital prescriptions, the app is built to modernize the entire care journey and reduce administrative workload for clinics."
+      PreviewComponent={
+        <NextImage
+          className={clsx(
+            "mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
+            "lg:max-h-[400px] lg:max-w-full",
+            "xl:max-h-none xl:max-w-[630px]",
+          )}
+          src="/images/home/suite.webp"
+          width={1470}
+          height={1170}
+          alt="preview"
+        />
+      }
     >
       {items.map((item, index) => (
         <FaqsSectionItem
