@@ -13,6 +13,8 @@ import { VideoIcon, DownloadIcon } from "@/icons";
 import * as Components from "./components";
 import * as Icons from "./icons";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type HomeDomainServisesProps = {
@@ -22,6 +24,9 @@ export type HomeDomainServisesProps = {
 export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("pages.home.services");
+  const tCommonActions = useTranslations("common.actions");
+
   return (
     <Section
       className={clsx(props.className, "")}
@@ -40,14 +45,14 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <>
               <Button
                 animation="scale"
-                title="Book a demo"
+                title={tCommonActions("book-demo")}
                 IconComponent={<VideoIcon />}
               />
 
               <Button
                 variant="second"
                 animation="background"
-                title="Download app"
+                title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
               />
             </>
@@ -67,21 +72,19 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           className="md:col-span-2"
           title={
             <>
-              <span className="text-[#7C78ED]">Stay in control</span>
+              <span className="text-[#7C78ED]">{t("booking.title.0")}</span>
               <br />
-              of every doctor visit
+              {t("booking.title.1")}
             </>
           }
           description={
             <span className="flex max-w-[370px]">
-              View upcoming and past visits, access full appointment details,
-              check referral requirements, and receive instant confirmations —
-              all in one intuitive interface.
+              {t("booking.description")}
             </span>
           }
           TagComponent={
             <BannerLayoutTag
-              title="Booking"
+              title={t("booking.tag")}
               IconComponent={<Icons.Booking />}
             />
           }
@@ -89,9 +92,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="text-[#7C78ED]! [--link-dashed-border-color:#BEB7F2]"
               items={[
-                "Instant scheduling for in-person & video visits",
-                "Full details: doctor, facility, referral, coverage",
-                "Quick check-in with generated QR codes",
+                t("booking.items.0"),
+                t("booking.items.1"),
+                t("booking.items.2"),
               ]}
             />
           }
@@ -104,9 +107,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             >
               <NextImage
                 className="transition-img h-full w-auto group-hover:transform-[scale(1.03)]"
-                src="/images/home/vaccinations/1.webp"
-                width={1080}
-                height={1170}
+                src="/images/home/vaccinations/online-pharmacy.webp"
+                width={2160}
+                height={2340}
                 alt="preview"
               />
             </div>
@@ -115,7 +118,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <>
               <Button
                 animation="scale"
-                title="Book a demo"
+                title={tCommonActions("book-demo")}
                 IconComponent={<VideoIcon />}
               />
 
@@ -123,7 +126,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
                 className="before:bg-[#D4CDF4]"
                 variant="second"
                 animation="scale"
-                title="Download app"
+                title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
               />
             </>

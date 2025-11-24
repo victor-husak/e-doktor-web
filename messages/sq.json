@@ -60,6 +60,14 @@
           "read-more": "Lexo më shumë",
           "description-full": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
         }
+      },
+      "services": {
+        "booking": {
+          "tag": "Farmacia online",
+          "title": ["Platformë digjitale", "e farmacive"],
+          "description": "Porositni barnat online dhe merrini me shpërndarje të shpejtë në shtëpi. Ndiqni porositë tuaja dhe merrni njoftime në kohë reale brenda aplikacionit.",
+          "items": ["Përdorin automatikisht eRecetën", "Zgjedhin alternativa gjenerike (INN)", "Marrin dorëzim në shtëpi ose në farmaci"]
+        }
       }
     }
   }

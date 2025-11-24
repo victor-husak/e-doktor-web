@@ -60,6 +60,14 @@
           "read-more": "Read more",
           "description-full": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals. The mobile app offers institutions the data they need to deliver efficient and high-quality care."
         }
+      },
+      "services": {
+        "booking": {
+          "tag": "Online pharmacy",
+          "title": ["Digital marketplace", "of pharmacies"],
+          "description": "Order medicines online and get fast home delivery. Track your orders and receive real-time updates inside the app.",
+          "items": ["Use their ePrescription automatically", "Choose alternative generic options (INN)", "Compare prices and availability"]
+        }
       }
     }
   }
