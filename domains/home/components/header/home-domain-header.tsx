@@ -40,7 +40,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
         </div>
 
         {/* Title */}
-        <h1 className="font-sf-compact-display mb-[25px] max-w-[422px] text-[38px]/[44px] font-semibold tracking-[-.024em] text-[#323233]">
+        <h1 className="font-sf-compact-display mb-[25px] max-w-[450px] text-[38px]/[44px] font-semibold tracking-[-.024em] text-[#323233]">
           <span className="text-[#A1A1A5]">{t("title.0")}</span>
           <br />
           {t("title.1")}
