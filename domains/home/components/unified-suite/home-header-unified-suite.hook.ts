@@ -9,6 +9,7 @@ import type {
 export const useHomeHeaderUnifiedSuite = (
   props: HomeHeaderUnifiedSuiteProps,
 ) => {
+  const [showFull, setShowFull] = useState(!props.withFullDescription);
   const [activeId, setActiveId] = useState(props.items.at(0)?.id);
   const [activeItemId, setActiveItemId] = useState(
     props.items.at(0)?.items?.at(0)?.id,
@@ -26,11 +27,17 @@ export const useHomeHeaderUnifiedSuite = (
     setImage(item.image);
   }, []);
 
+  const onTriggerShowFull = useCallback(() => {
+    setShowFull(!showFull);
+  }, [showFull]);
+
   return {
+    showFull,
     activeId,
     activeItemId,
     image,
     onChangeActive,
     onChangeActiveItem,
+    onTriggerShowFull,
   };
 };

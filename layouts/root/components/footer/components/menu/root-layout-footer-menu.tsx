@@ -1,27 +1,40 @@
 import * as Components from "./components";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type RootLayoutFooterMenuProps = {
   className?: string;
-  title: string;
-  items: { key: string; title: string; href?: string }[];
+  translation: string;
+  items: {
+    key: string;
+    title: string;
+    href?: string;
+    withTranslation?: boolean;
+  }[];
 };
 
 export const RootLayoutFooterMenu: React.FC<RootLayoutFooterMenuProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations(props.translation);
+
   return (
     <div className={clsx(props.className, "flex flex-col gap-7.5")}>
       {/* title */}
       <span className="text-[15px]/[18px] font-semibold tracking-[-.008em] text-white">
-        {props.title}
+        {t("title")}
       </span>
 
       {/* menu */}
       <ul className={clsx("my-[-6.5px] flex flex-col items-start")}>
         {props.items.map((item) => (
-          <Components.Item title={item.title} href={item.href} key={item.key} />
+          <Components.Item
+            title={item.withTranslation ? t(`items.${item.title}`) : item.title}
+            href={item.href}
+            key={item.key}
+          />
         ))}
       </ul>
     </div>

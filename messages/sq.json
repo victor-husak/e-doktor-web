@@ -9,7 +9,9 @@
       "download-app": "Shkarko aplikacionin",
       "book-demo": "Rezervo një demonstrim",
       "watch-presentation": "Shiko prezantimin"
-    }
+    },
+    "read-more": "Lexo më shumë",
+    "read-hidden": "Më pak"
   },
   "layout": {
     "topline": {
@@ -25,6 +27,46 @@
     },
     "info": {
       "description": ["Mbështetur nga", "StartUp Albania", "për implementimin e inovacionit në shëndetësi.", "Lexo më shumë"]
+    },
+    "footer": {
+      "info": {
+        "title": "Qasje inteligjente në kujdesin shëndetësor publik.",
+        "description": "Një platformë plotësisht digjitale e shëndetit që lidh pacientët në Shqipëri me klinikat, mjekët, farmacitë dhe shërbimet kombëtare shëndetësore — të gjitha në një aplikacion të sigurt."
+      },
+      "menu": {
+        "product": {
+          "title": "Produkt",
+          "items": {
+            "features": "Veçoritë",
+            "how-it-works": "Si funksionon",
+            "privacy-and-security": "Privatësia dhe siguria",
+            "download-the-app": "Shkarko aplikacionin"
+          }
+        },
+        "support": {
+          "title": "Mbështetje",
+          "items": {
+            "contact-us": "Kontakto na",
+            "help-center": "Qendra e ndihmës",
+            "book-demo": "Rezervo një demonstrim"
+          }
+        },
+        "contact": {
+          "title": "Kontakt"
+        },
+        "download": {
+          "title": "Shkarko"
+        }
+      },
+      "meta": {
+        "description": "Mbështetur nga StartUp Albania për implementimin e inovacionit në shëndetësi. Lexo më shumë në"
+      },
+      "bottom": {
+        "copyright": "Të gjitha të drejtat e rezervuara.",
+        "legal-compliance": "Ligji & Përputhshmëria",
+        "cookie-preferences": "Preferencat e cookies",
+        "privacy-policy": "Politika e Privatësisë"
+      }
     }
   },
   "pages": {
@@ -72,7 +114,6 @@
           "tag": "Çfarë ofrojmë",
           "title": ["Një paketë e unifikuar", "shërbimesh shëndetësore dixhitale"],
           "description": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur.",
-          "read-more": "Lexo më shumë",
           "description-full": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
         },
         "items": [
@@ -206,6 +247,59 @@
           "help": ["Ne i ndihmojmë organizatat të kenë sukses me ato më të rëndësishmet – ", "transformimet"],
           "questions": "Keni pyetje? Na kontaktoni në"
         }
+      },
+      "features": {
+        "header": {
+          "title": "Funksione të tjera",
+          "description": "BeeHealthy është një platformë SaaS e personalizueshme, white-label, e shëndetit digjital, me të gjitha funksionet e nevojshme për ndërtimin e një shërbimi modern digjital-fizik."
+        },
+        "items": [
+          {
+            "title": "Menaxhimi i takimeve",
+            "description":
+              "Menaxhoni oraret e klinikës dhe disponueshmërinë me lehtësi, duke mundësuar rezervime të shpejta dhe intuitive direkt brenda aplikacionit. Plotësisht e integruar me sistemin shëndetësor të Shqipërisë."
+          },
+          {
+            "title": "Dosjet mjekësore dhe shëndetësore",
+            "description":
+              "Qasje në kartelën e plotë mjekësore, historikun e vaksinimeve, rezultatet laboratorike, recetat dhe përmbledhjet e vizitave. Gjithmonë të sinkronizuara dhe të ruajtura në mënyrë të sigurt."
+          },
+          {
+            "title": "Mjekë specialistë",
+            "description":
+              "Gjeni dhe rezervoni vizita me mjekë specialistë të verifikuar në të gjithë Shqipërinë. Shfletoni profilet, kontrolloni disponueshmërinë dhe caktoni vizita me vetëm disa klikime — plotësisht e lidhur me sistemin kombëtar."
+          },
+          {
+            "title": "Thirrja emergjente",
+            "description":
+              "Kontaktoni menjëherë një mjek në situata urgjente. Vendndodhja juaj dhe informacionet thelbësore ndahen automatikisht për të siguruar ndihmë të shpejtë dhe të saktë."
+          },
+          {
+            "title": "Moduli i komunikimit",
+            "description":
+              "Qëndroni në kontakt me mjekun tuaj përmes chat-it të sigurt, thirrjeve zanore ose videokonsultave. Shkëmbeni simptoma, dërgoni foto dhe merrni këshilla mjekësore në çdo kohë — të gjitha brenda aplikacionit."
+          },
+          {
+            "title": "Farmacia online",
+            "description":
+              "Gjeni dhe blini barna me recetë direkt në aplikacion me çmime transparente, zbritje dhe përditësime të disponueshmërisë. Filtroni, krahasoni dhe porosisni barna nga farmacitë e certifikuara shqiptare."
+          },
+          {
+            "title": "Analizat laboratorike",
+            "description":
+              "Shfletoni historikun e analizave laboratorike me rezultate të detajuara, data dhe ofrues. Qasuni lehtësisht raporteve të përfunduara dhe merrni njoftime kur dalin rezultate të reja."
+          },
+          {
+            "title": "Receta digjitale",
+            "description":
+              "Shikoni recetat aktive, merrni kujtesa për skadimin dhe menaxhoni medikamentet në një vend të vetëm. Automatikisht e lidhur me farmacitë dhe ofruesit e kujdesit shëndetësor."
+          },
+          {
+            "title": "Historia mjekësore",
+            "description":
+              "Qasje në një pamje të unifikuar dhe kronologjike të të gjitha ngjarjeve tuaja mjekësore — vizita, receta, vaksinime, analiza laboratorike dhe më shumë. Gjithmonë e sinkronizuar dhe e ruajtur në mënyrë të sigurt."
+          }
+        ]
       }
     }
   }

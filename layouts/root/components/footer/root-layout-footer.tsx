@@ -34,13 +34,25 @@ export const RootLayoutFooter: React.FC<RootLayoutFooterProps> = (
             "xl:ml-1 xl:justify-center",
           )}
         >
-          <Components.Menu title="Product" items={productOptions} />
+          <Components.Menu
+            translation="layout.footer.menu.product"
+            items={productOptions}
+          />
 
-          <Components.Menu title="Support" items={supportOptions} />
+          <Components.Menu
+            translation="layout.footer.menu.support"
+            items={supportOptions}
+          />
 
-          <Components.Menu title="Contact" items={contactOptions} />
+          <Components.Menu
+            translation="layout.footer.menu.contact"
+            items={contactOptions}
+          />
 
-          <Components.Menu title="Download" items={downloadOptions} />
+          <Components.Menu
+            translation="layout.footer.menu.download"
+            items={downloadOptions}
+          />
         </div>
       </div>
 
@@ -52,16 +64,16 @@ export const RootLayoutFooter: React.FC<RootLayoutFooterProps> = (
 };
 
 const productOptions: MenuProps["items"] = [
-  { key: "1", title: "Features" },
-  { key: "2", title: "How it works" },
-  { key: "3", title: "Privacy and security" },
-  { key: "4", title: "Download the app" },
+  { key: "1", title: "features", withTranslation: true },
+  { key: "2", title: "how-it-works", withTranslation: true },
+  { key: "3", title: "privacy-and-security", withTranslation: true },
+  { key: "4", title: "download-the-app", withTranslation: true },
 ];
 
 const supportOptions: MenuProps["items"] = [
-  { key: "1", title: "Contact us" },
-  { key: "2", title: "Help Center" },
-  { key: "3", title: "Book a demo" },
+  { key: "1", title: "contact-us", withTranslation: true },
+  { key: "2", title: "help-center", withTranslation: true },
+  { key: "3", title: "book-demo", withTranslation: true },
 ];
 
 const contactOptions: MenuProps["items"] = [

@@ -42,9 +42,17 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
   props,
 ): React.JSX.Element => {
   const t = useTranslations(props.translation);
+  const tCommon = useTranslations("common");
 
-  const { image, activeId, activeItemId, onChangeActive, onChangeActiveItem } =
-    useHomeHeaderUnifiedSuite(props);
+  const {
+    image,
+    activeId,
+    activeItemId,
+    showFull,
+    onTriggerShowFull,
+    onChangeActive,
+    onChangeActiveItem,
+  } = useHomeHeaderUnifiedSuite(props);
 
   return (
     <FaqsSection
@@ -61,21 +69,26 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
       }
       description={
         <>
-          {t("header.description")}
+          {t(
+            showFull && props.withFullDescription
+              ? "header.description-full"
+              : "header.description",
+          )}
+
           {props.withFullDescription && (
             <>
               {" "}
-              <NextLink
+              <span
                 className={clsx(
-                  "link-dashed inline-flex items-center gap-[5px] text-[#7C78ED] transition-opacity [--link-dashed-border-color:currentColor]",
+                  "link-dashed inline-flex cursor-pointer items-center gap-[5px] text-[#7C78ED] transition-opacity [--link-dashed-border-color:currentColor]",
                   "hover:opacity-60",
                 )}
-                href="/"
+                onClick={onTriggerShowFull}
               >
-                <span>{t("header.read-more")}</span>
+                <span>{tCommon(showFull ? "read-hidden" : "read-more")}</span>
 
                 <PlusIcon color="#7C78ED" />
-              </NextLink>
+              </span>
             </>
           )}
         </>

@@ -3,6 +3,8 @@ import * as Icons from "./icons";
 
 import NextLink from "next/link";
 
+import { useTranslations } from "next-intl";
+
 import { clsx } from "clsx";
 
 export type RootLayoutFooterBottomProps = {
@@ -12,6 +14,8 @@ export type RootLayoutFooterBottomProps = {
 export const RootLayoutFooterBottom: React.FC<RootLayoutFooterBottomProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("layout.footer.bottom");
+
   return (
     <div
       className={clsx(
@@ -33,7 +37,7 @@ export const RootLayoutFooterBottom: React.FC<RootLayoutFooterBottomProps> = (
 
       {/* copyright */}
       <p className={clsx("order-last mr-[25px]", "md:order-0")}>
-        2025 eDoktor. All rights reserved.
+        2025 eDoktor. {t("copyright")}
       </p>
 
       {/* menu */}
@@ -44,15 +48,17 @@ export const RootLayoutFooterBottom: React.FC<RootLayoutFooterBottomProps> = (
         )}
       >
         <li>
-          <NextLink href="/legal-compliance">Legal & Compliance</NextLink>
+          <NextLink href="/legal-compliance">{t("legal-compliance")}</NextLink>
         </li>
 
         <li>
-          <NextLink href="/cookie-preferences">Cookie Preferences</NextLink>
+          <NextLink href="/cookie-preferences">
+            {t("cookie-preferences")}
+          </NextLink>
         </li>
 
         <li>
-          <NextLink href="/privacy-policy">Privacy Policy</NextLink>
+          <NextLink href="/privacy-policy">{t("privacy-policy")}</NextLink>
         </li>
       </ul>
     </div>

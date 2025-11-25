@@ -9,7 +9,9 @@
       "download-app": "Download app",
       "book-demo": "Book a demo",
       "watch-presentation": "Watch presentation"
-    }
+    },
+    "read-more": "Read more",
+    "read-hidden": "Hidden"
   },
   "layout": {
     "topline": {
@@ -25,6 +27,46 @@
     },
     "info": {
       "description": ["Backed by", "StartUp Albania", "for implementing innovation in healthcare.", "Read further"]
+    },
+    "footer": {
+      "info": {
+        "title": "Smart access to public healthcare.",
+        "description": "A fully digital healthcare platform connecting patients in Albania with clinics, doctors, pharmacies, and national health services — all in one secure app."
+      },
+      "menu": {
+        "product": {
+          "title": "Product",
+          "items": {
+            "features": "Features",
+            "how-it-works": "How it works",
+            "privacy-and-security": "Privacy and security",
+            "download-the-app": "Download the app"
+          }
+        },
+        "support": {
+          "title": "Support",
+          "items": {
+            "contact-us": "Contact us",
+            "help-center": "Help Center",
+            "book-demo": "Book a demo"
+          }
+        },
+        "contact": {
+          "title": "Contact"
+        },
+        "download": {
+          "title": "Download"
+        }
+      },
+      "meta": {
+        "description": "Backed by StartUp Albania for implementing innovation in healthcare. Read more on"
+      },
+      "bottom": {
+        "copyright": "All rights reserved.",
+        "legal-compliance": "Legal & Compliance",
+        "cookie-preferences": "Cookie Preferences",
+        "privacy-policy": "Privacy Policy"
+      }
     }
   },
   "pages": {
@@ -72,7 +114,6 @@
           "tag": "What we offer",
           "title": ["A unified suite of", "digital health services"],
           "description": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals",
-          "read-more": "Read more",
           "description-full": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals. The mobile app offers institutions the data they need to deliver efficient and high-quality care."
         },
         "items": [
@@ -203,6 +244,59 @@
           "help": ["We help organisations succeed with their most important", "transformations"],
           "questions": "Have questions? Contact us at"
         }
+      },
+      "features": {
+        "header": {
+          "title": "Other features",
+          "description": "BeeHealthy is a configurable, white-label, digital healthcare SaaS platform with all the features for building a modern digital-physical service provision."
+        },
+        "items": [
+          {
+            "title": "Appointments management",
+            "description":
+              "Manage clinic schedules and availability with ease, enabling fast and intuitive appointment booking directly inside the app. Fully integrated with Albania’s healthcare system."
+          },
+          {
+            "title": "Medical and health records",
+            "description":
+              "Access complete medical files, vaccination history, lab results, prescriptions, and visit summaries. Always synced and securely stored in one place."
+          },
+          {
+            "title": "Specialist doctors",
+            "description":
+              "Find and book visits with verified specialist doctors across Albania.Browse profiles, check availability, and schedule appointments in just a few taps - fully connected to the national system."
+          },
+          {
+            "title": "Emergency call",
+            "description":
+              "Contact a doctor immediately in urgent situations. Your location and essential info are shared automatically to ensure fast and accurate assistance."
+          },
+          {
+            "title": "Communication module",
+            "description":
+              "Stay connected with your doctor through secure chat, voice calls, or video consultations. Share symptoms, send photos, and receive medical guidance anytime — all within the app."
+          },
+          {
+            "title": "Online pharmacy",
+            "description":
+              "Find and purchase prescriptions directly in the app with transparent prices, discounts, and availability updates. Filter, compare, and order medicines from certified Albanian pharmacies."
+          },
+          {
+            "title": "Laboratory tests",
+            "description":
+              "Browse your lab test history with detailed results, dates, and providers. Easily access completed reports and receive notifications when new results are available."
+          },
+          {
+            "title": "Digital prescriptions",
+            "description":
+              "View active prescriptions, receive expiration reminders, and manage medications in one place. Automatically connected with pharmacies and healthcare providers."
+          },
+          {
+            "title": "Medical history",
+            "description":
+              "Access a unified and chronological view of all your medical events — visits, prescriptions, vaccinations, lab results, and more. Always synced, always securely stored."
+          }
+        ]
       }
     }
   }
