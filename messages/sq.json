@@ -118,6 +118,55 @@
           }
         ]
       },
+      "complete-suite": {
+        "header": {
+          "tag": "Kë ndihmojmë?",
+          "title": ["Një paketë e plotë", "e funksioneve shëndetësore"],
+          "description": "eDoktor u ofron pacientëve qasje të menjëhershme në shërbimet thelbësore shëndetësore — të gjitha në një aplikacion të lehtë për t’u përdorur. Nga rezervimi i vizitave te recetat digjitale, aplikacioni është ndërtuar për të modernizuar të gjithë udhëtimin e kujdesit dhe për të ulur ngarkesën e punës."
+        },
+        "items": [
+          {
+            "title": "Akses kombëtar në shërbimet diagnostike",
+            "description": "Qytetarët mund të rezervojnë:",
+            "items": [
+              {
+                "title": "Analiza laboratorike",
+                "description": "Rezervoni analiza laboratorike me orare në kohë reale."
+              },
+              {
+                "title": "Radiografi",
+                "description": "Rezervoni me shpejtësi ekzaminime me rreze X."
+              },
+              {
+                "title": "CT dhe MRI",
+                "description": "Organizoni lehtësisht takime për CT ose MRI."
+              },
+              {
+                "title": "Kontrollet parandaluese",
+                "description": "Rezervoni kontrolle rutinë dhe ekzaminime parandaluese."
+              }
+            ]
+          },
+          {
+            "title": "Dorëzim digjital i rezultateve",
+            "description": "Të gjitha rezultatet:",
+            "items": [
+              {
+                "title": "Dërgim i drejtpërdrejtë",
+                "description": "Dërgohen drejtpërdrejt në aplikacion"
+              },
+              {
+                "title": "Rruajtje e përhershme",
+                "description": "Ruhen përgjithmonë në Dosjen Shëndetësore"
+              },
+              {
+                "title": "Qasje e autorizuar",
+                "description": "Të qasshme për pacientin dhe mjekët e lejuar"
+              }
+            ]
+          }
+        ]
+      },
       "services": {
         "booking": {
           "tag": "Farmacia online",

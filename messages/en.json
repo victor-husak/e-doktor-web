@@ -119,6 +119,55 @@
           }
         ]
       },
+      "complete-suite": {
+        "header": {
+          "tag": "Who we help?",
+          "title": ["A complete suite", "of healthcare features"],
+          "description": "eDoktor gives patients instant access to essential healthcare services — all in one easy-to-use app. From appointment booking to digital prescriptions, the app is built to modernize the entire care journey and reduce workload."
+        },
+        "items": [
+          {
+            "title": "Nationwide access to diagnostics",
+            "description": "Citizens can schedule:",
+            "items": [
+              {
+                "title": "Laboratory tests",
+                "description": "Book tests at nearby facilities with real-time availability."
+              },
+              {
+                "title": "Radiography",
+                "description": "Quickly schedule X-ray exams at public clinics."
+              },
+              {
+                "title": "CT & MRI scans",
+                "description": "Easily arrange CT or MRI appointments with specialists."
+              },
+              {
+                "title": "Preventive check-ups",
+                "description": "Book routine screenings and preventive health exams."
+              }
+            ]
+          },
+          {
+            "title": "Digital delivery of results",
+            "description": "All results are:",
+            "items": [
+              {
+                "title": "Delivered directly",
+                "description": "Results are delivered directly inside the mobile app"
+              },
+              {
+                "title": "Stored in Health Record",
+                "description": "Stored permanently in the Digital Health Record"
+              },
+              {
+                "title": "Accessible anytime",
+                "description": "Accessible anytime by the patient or authorized doctors"
+              }
+            ]
+          }
+        ]
+      },
       "services": {
         "booking": {
           "tag": "Online pharmacy",

@@ -33,9 +33,8 @@ export type QuestionItem = {
 export type HomeHeaderUnifiedSuiteProps = {
   className?: string;
   translation: string;
-  // title: string;
-  // description: string;
-  // tag: string;
+  withFullDescription?: boolean;
+  reverse?: boolean;
   items: Question[];
 };
 
@@ -49,7 +48,7 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
 
   return (
     <FaqsSection
-      reverse
+      reverse={props.reverse}
       className="scroll-mt-15"
       id="what-we-offer"
       tag={t("header.tag")}
@@ -62,18 +61,23 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
       }
       description={
         <>
-          {t("header.description")}{" "}
-          <NextLink
-            className={clsx(
-              "link-dashed inline-flex items-center gap-[5px] text-[#7C78ED] transition-opacity [--link-dashed-border-color:currentColor]",
-              "hover:opacity-60",
-            )}
-            href="/"
-          >
-            <span>{t("header.read-more")}</span>
+          {t("header.description")}
+          {props.withFullDescription && (
+            <>
+              {" "}
+              <NextLink
+                className={clsx(
+                  "link-dashed inline-flex items-center gap-[5px] text-[#7C78ED] transition-opacity [--link-dashed-border-color:currentColor]",
+                  "hover:opacity-60",
+                )}
+                href="/"
+              >
+                <span>{t("header.read-more")}</span>
 
-            <PlusIcon color="#7C78ED" />
-          </NextLink>
+                <PlusIcon color="#7C78ED" />
+              </NextLink>
+            </>
+          )}
         </>
       }
       PreviewComponent={
