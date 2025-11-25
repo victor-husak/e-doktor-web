@@ -15,23 +15,37 @@ import { useHomeHeaderUnifiedSuite } from "./home-header-unified-suite.hook";
 
 import { clsx } from "clsx";
 
+export type Question = {
+  id: number;
+  title: string;
+  description: string;
+  items: QuestionItem[];
+  image?: string;
+};
+
+export type QuestionItem = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+};
+
 export type HomeHeaderUnifiedSuiteProps = {
   className?: string;
+  translation: string;
+  title: string;
+  description: string;
+  tag: string;
+  items: Question[];
 };
 
 export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
   props,
 ): React.JSX.Element => {
-  const t = useTranslations("pages.home.unified-suite");
+  const t = useTranslations(props.translation);
 
-  const {
-    questions,
-    image,
-    activeId,
-    activeItemId,
-    onChangeActive,
-    onChangeActiveItem,
-  } = useHomeHeaderUnifiedSuite();
+  const { image, activeId, activeItemId, onChangeActive, onChangeActiveItem } =
+    useHomeHeaderUnifiedSuite(props);
 
   return (
     <FaqsSection
@@ -79,10 +93,10 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
       }
     >
       <div className="xl:mt-[69px]">
-        {questions.map((question, index) => (
+        {props.items.map((question, index) => (
           <FaqsSectionItem
             className={clsx({ "border-t": index === 0 })}
-            title={question.title}
+            title={t(question.title)}
             id={question.id}
             active={question.id === activeId}
             key={question.id}
@@ -97,7 +111,7 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
             >
               {/* Title */}
               <p className="mr-10 text-[14px]/[20px] text-[#838993]">
-                Citizens can communicate with their family doctor through:
+                {t(question.description)}
               </p>
 
               {/* Grid */}
@@ -107,7 +121,8 @@ export const HomeHeaderUnifiedSuite: React.FC<HomeHeaderUnifiedSuiteProps> = (
                 >
                   {question.items?.map((item) => (
                     <Components.Item
-                      data={item}
+                      title={t(item.title)}
+                      description={t(item.description)}
                       active={activeItemId === item.id}
                       key={item.id}
                       onSelect={() => onChangeActiveItem(item)}

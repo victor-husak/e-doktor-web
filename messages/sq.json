@@ -7,7 +7,8 @@
     "actions": {
       "watch-demo": "Shiko demonstrimin",
       "download-app": "Shkarko aplikacionin",
-      "book-demo": "Rezervo një demonstrim"
+      "book-demo": "Rezervo një demonstrim",
+      "watch-presentation": "Shiko prezantimin"
     }
   },
   "layout": {
@@ -50,7 +51,21 @@
       ],
       "healthcare": {
         "title": ["Ekosistem modern", "shëndetësor për gjithë vendin"],
-        "description": "eDoktor është platforma më e avancuar dhe gjithëpërfshirëse e shëndetësisë dixhitale në Shqipëri, e krijuar për të unifikuar të gjitha shërbimet kryesore shëndetësore në një sistem të sigurt, efikas dhe të lehtë për t’u përdorur. Ajo fuqizon qytetarët, mbështet mjekët dhe forcon institucionet publike me teknologji të avancuar dhe të dhëna mjekësore në kohë reale."
+        "description": "eDoktor është platforma më e avancuar dhe gjithëpërfshirëse e shëndetësisë dixhitale në Shqipëri, e krijuar për të unifikuar të gjitha shërbimet kryesore shëndetësore në një sistem të sigurt, efikas dhe të lehtë për t’u përdorur. Ajo fuqizon qytetarët, mbështet mjekët dhe forcon institucionet publike me teknologji të avancuar dhe të dhëna mjekësore në kohë reale.",
+        "items": [
+          {
+            "tag": "Mjekët Specialistë",
+            "title": ["Referim dhe kujdes", "specialist më efikas"],
+            "description": "Gjej specialistët e besuar, shiko oraret e lira dhe cakto takime lehtësisht në spitalet publike. Të gjitha oraret dhe detajet sinkronizohen automatikisht me kartelën tënde shëndetësore.",
+            "items": ["Rezervojnë vizita tek specialistët në spitalet publike", "Marrin udhëzime dhe detaje të vizitës", "Shikojnë oraret e lira"]
+          },
+          {
+            "tag": "Mjekët Specialistë",
+            "title": ["Historik klinik", "i unifikuar"],
+            "description": "Diagnozat tuaja, trajtimet e kaluara, rezultatet e analizave, imazheria dhe statusi i vaksinimit organizohen automatikisht në një linjë të unifikuar kohore, duke u dhënë mjekëve një pasqyrë të qartë dhe të saktë të gjendjes suaj shëndetësore.",
+            "items": ["Diagnozat", "Trajtimet e mëparshme", "Rezultatet e analizave"]
+          }
+        ]
       },
       "unified-suite": {
         "header": {
@@ -59,7 +74,49 @@
           "description": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur.",
           "read-more": "Lexo më shumë",
           "description-full": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
-        }
+        },
+        "items": [
+          {
+            "title": "Qasje në kujdesin parësor",
+            "description": "Qytetarët mund të komunikojnë me mjekun e tyre të familjes përmes:",
+            "items": [
+              {
+                "title": "Komunikim i sigurt",
+                "description": "Mesazhe private dhe të enkriptuara me mjekun tuaj."
+              },
+              {
+                "title": "Thirrje telefonike 1-me-1",
+                "description": "Konsultime të drejtpërdrejta telefonike me mjekun e familjes."
+              },
+              {
+                "title": "Konsultime me video HD",
+                "description": "Thirrje video me cilësi të lartë për këshillim të detajuar mjekësor."
+              }
+            ]
+          },
+          {
+            "title": "Planifikim i zgjuar i vizitave",
+            "description": "Pa radhë, pa vizita të përsëritura. Sistemi ofron:",
+            "items": [
+              {
+                "title": "Disponueshmëri në kohë reale",
+                "description": "Shihni kur mjeku juaj është online dhe gati për t'ju ndihmuar."
+              },
+              {
+                "title": "Rezervim dhe riplanifikim",
+                "description": "Rezervoni ose ndryshoni lehtësisht vizitën me mjekun tuaj."
+              },
+              {
+                "title": "Kujtesa automatike",
+                "description": "Merrni njoftime me kohë për vizita, vaksina, etj."
+              }
+            ]
+          },
+          {
+            "title": "Dokumentacion i integruar",
+            "description": "Çdo diagnozë, shënim mjekësor dhe recetë ruhet automatikisht në Dosjen Digjitale Shëndetësore, duke siguruar vazhdimësi të kujdesit dhe transparencë të plotë."
+          }
+        ]
       },
       "services": {
         "booking": {
@@ -67,6 +124,38 @@
           "title": ["Platformë digjitale", "e farmacive"],
           "description": "Porositni barnat online dhe merrini me shpërndarje të shpejtë në shtëpi. Ndiqni porositë tuaja dhe merrni njoftime në kohë reale brenda aplikacionit.",
           "items": ["Përdorin automatikisht eRecetën", "Zgjedhin alternativa gjenerike (INN)", "Marrin dorëzim në shtëpi ose në farmaci"]
+        },
+        "medical-history": {
+          "tag": "Historia mjekësore",
+          "title": ["Historia mjekësore,", "gjithmonë me ju"],
+          "description": "eDoktor sinkronizon automatikisht të dhënat nga klinikat, spitalet, farmacitë dhe mjekët tuaj për t'ju dhënë një histori të plotë dhe të besueshme mjekësore.",
+          "items": [
+            "Rrjedhë kohore e unifikuar e kujdesit tuaj",
+            "Filtra inteligjentë dhe kërkim i menjëhershëm",
+            "Certifikata dhe dokumente digjitale"
+          ]
+        },
+        "emergency-call": {
+          "tag": "Urgjenca kombëtare",
+          "title": ["Urgjenca", "Kombëtare (127/112)"],
+          "description": "Reagim më I mençur dhe më I shpejtë në urgjencë. Përmirëson kohën e reagimit, saktësinë dhe vendimmarrjen shpëtimtare.",
+          "items": ["Ndaje vendndodhjen GPS", "Historiku i dukshëm për personelin e autorizuar", "Rastet dërgohen te mjeku sipas nevojës"]
+        },
+        "prescriptions": {
+          "tag": "eRecetat",
+          "title": ["Të sigurta, të firmosura,", "gjithmonë të disponueshme"],
+          "description": "Mjekët lëshojnë receta në mënyrë elektronike përmes eDoktor. Recetat ruhen në mënyrë të sigurt në Dosjen Digjitale Shëndetësore të qytetarit.",
+          "items": ["Nënshkrim elektronik", "Dërgim automatik në farmacia", "Zero rrezik interpretimi ose humbjeje"]
+        },
+        "vaccinations": {
+          "tag": "Vaksinimet",
+          "title": ["Monitorim i plotë", "i vaksinave"],
+          "description": "Ndjekni dozat, akseson­i certifikatat e verifikuara, merrni njoftime dhe ndani të dhënat tuaja mjekësore me klinika ose shkolla.",
+          "items": ["Historikun e plotë të vaksinave", "Dozat e ardhshme sipas kalendarit kombëtar", "Rezervim pa radhë"]
+        },
+        "footer": {
+          "help": ["Ne i ndihmojmë organizatat të kenë sukses me ato më të rëndësishmet – ", "transformimet"],
+          "questions": "Keni pyetje? Na kontaktoni në"
         }
       }
     }

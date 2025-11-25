@@ -2,6 +2,7 @@ import { clsx } from "clsx";
 
 export type BannerLayoutProps = {
   className?: string;
+  size?: "base" | "small";
   title: React.ReactNode;
   description: React.ReactNode;
   TagComponent: React.ReactNode;
@@ -28,7 +29,15 @@ export const BannerLayout: React.FC<BannerLayoutProps> = (
         {props.TagComponent}
 
         {/* Title */}
-        <h3 className="font-sf-compact-display mb-[25px] text-[32px]/[38px] font-semibold tracking-[-.016em]">
+        <h3
+          className={clsx(
+            "font-sf-compact-display mb-[25px] font-semibold tracking-[-.016em]",
+            {
+              "text-[32px]/[38px]": props.size !== "small",
+              "text-[26px]/[32px]": props.size === "small",
+            },
+          )}
+        >
           {props.title}
         </h3>
 

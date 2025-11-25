@@ -135,18 +135,21 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
 
         <BannerLayout
           className="bg-[#F5F5F7]"
+          size="small"
           title={
             <>
-              <span className="text-[#AEB2C1]">Medical history,</span>
+              <span className="text-[#AEB2C1]">
+                {t("medical-history.title.0")}
+              </span>
               <br />
-              always with you
+              {t("medical-history.title.1")}
             </>
           }
-          description="eDoktor automatically syncs data from clinics, hospitals, pharmacies, and your doctors to give you a complete, reliable medical history."
+          description={t("medical-history.description")}
           TagComponent={
             <BannerLayoutTag
               className="bg-[#E8E8EA] text-[#323233]!"
-              title="Medical history"
+              title={t("medical-history.tag")}
               IconComponent={<Icons.History />}
             />
           }
@@ -154,9 +157,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="text-[#858A9B] [--link-dashed-border-color:#D2D4D8]"
               items={[
-                "Unified timeline of your care",
-                "Smart filters and instant search",
-                "Digital certificates and documents",
+                t("medical-history.items.0"),
+                t("medical-history.items.1"),
+                t("medical-history.items.2"),
               ]}
             />
           }
@@ -165,7 +168,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-[#EAEAED]"
               variant="second"
               animation="scale"
-              title="Book a demo"
+              title={tCommonActions("book-demo")}
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }
@@ -173,18 +176,21 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
 
         <BannerLayout
           className="bg-[#7C78ED]! text-white"
+          size="small"
           title={
             <>
-              <span className="text-[#BBB9F5]">Complete vaccination</span>
+              <span className="text-[#BBB9F5]">
+                {t("vaccinations.title.0")}
+              </span>
               <br />
-              oversight
+              {t("vaccinations.title.1")}
             </>
           }
-          description="Track your doses, access verified certificates, receive reminders, and share your medical records with clinics or schools."
+          description={t("vaccinations.description")}
           TagComponent={
             <BannerLayoutTag
               className="bg-white text-[#7C78ED]!"
-              title="Vaccinations"
+              title={t("vaccinations.tag")}
               IconComponent={<Icons.Vaccinations />}
             />
           }
@@ -201,9 +207,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="transition-img text-[#D4D3FF] [--link-dashed-border-color:#A29FF5]"
               items={[
-                "Full vaccination history",
-                "Calendar of upcoming doses",
-                "Appointment scheduling",
+                t("vaccinations.items.0"),
+                t("vaccinations.items.1"),
+                t("vaccinations.items.2"),
               ]}
             />
           }
@@ -212,7 +218,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-white"
               variant="second"
               animation="scale"
-              title="Watch presentation"
+              title={tCommonActions("watch-presentation")}
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }
@@ -220,25 +226,28 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
 
         <BannerLayout
           className="bg-[#F5F5F7]"
+          size="small"
           title={
             <>
-              <span className="text-[#AEB2C1]">Stay connected</span>
+              <span className="text-[#AEB2C1]">
+                {t("prescriptions.title.0")}
+              </span>
               <br />
-              with your family doctor
+              {t("prescriptions.title.1")}
             </>
           }
-          description="Book in-person or video meeting , request referrals, access medical history and prescriptions, and communicate with your family doctor."
+          description={t("prescriptions.description")}
           TagComponent={
             <BannerLayoutTag
               className="bg-[#E8E8EA] text-[#323233]!"
-              title="Family doctor"
+              title={t("prescriptions.tag")}
               IconComponent={<Icons.Doctor />}
             />
           }
           PreviewComponent={
             <NextImage
               className="transition-img bg-[#EDEDEF]"
-              src="/images/home/vaccinations/doctor.webp"
+              src="/images/home/vaccinations/presentation.webp"
               width={1002}
               height={600}
               alt="preview"
@@ -248,9 +257,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="text-[#858A9B] [--link-dashed-border-color:#D2D4D8]"
               items={[
-                "Сommunication with calls, video, and chat",
-                "Booking with real-time availability",
-                "Instant referrals for specialist",
+                t("prescriptions.items.0"),
+                t("prescriptions.items.1"),
+                t("prescriptions.items.2"),
               ]}
             />
           }
@@ -259,7 +268,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-[#EAEAED]"
               variant="second"
               animation="scale"
-              title="Book a demo"
+              title={tCommonActions("watch-presentation")}
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }
@@ -267,18 +276,21 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
 
         <BannerLayout
           className="bg-[#F8E9EC]"
+          size="small"
           title={
             <>
-              <span className="text-[#C9ABB3]">National</span>
+              <span className="text-[#C9ABB3]">
+                {t("emergency-call.title.0")}
+              </span>
               <br />
-              Emergency (127/112)
+              {t("emergency-call.title.1")}
             </>
           }
-          description="Smarter, faster emergency response. This improves response time, accuracy, and life-saving decision-making."
+          description={t("emergency-call.description")}
           TagComponent={
             <BannerLayoutTag
               className="bg-[#EBD9DE] text-[#323233]!"
-              title="Emergency call"
+              title={t("emergency-call.tag")}
               IconComponent={<Icons.Call />}
             />
           }
@@ -295,9 +307,9 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <BannerLayoutList
               className="text-[#7E7375] [--link-dashed-border-color:#CCC3C5]"
               items={[
-                "GPS location is shared",
-                "Medical history is displayed to authorized staff",
-                "Citizen identity is verified",
+                t("emergency-call.items.0"),
+                t("emergency-call.items.1"),
+                t("emergency-call.items.2"),
               ]}
             />
           }
@@ -306,7 +318,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-[#EBD8DD]"
               variant="second"
               animation="scale"
-              title="Watch presentation"
+              title={tCommonActions("watch-presentation")}
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }

@@ -77,7 +77,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           onBeforeInit={onBeforeInit}
           modules={[Navigation]}
         >
-          {data.map((item) => (
+          {data.map((item, index) => (
             <SwiperSlide key={item.id}>
               <div
                 className={clsx(
@@ -91,26 +91,31 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
                   <div className="mb-[25px] flex items-center gap-2 rounded-full bg-[#7C78ED] px-2.5 py-[5px] text-[12px]/[14px] font-medium tracking-[-.016em] text-white">
                     <Icons.Booking />
 
-                    <span>Booking</span>
+                    <span>{t(`items.${index}.tag`)}</span>
                   </div>
 
                   {/* Title */}
                   <h3 className="font-sf-compact-display mb-[25px] text-[32px]/[38px] font-semibold tracking-[-.016em]">
-                    <span className="text-[#7C78ED]">Easy-to-use</span>
+                    <span className="text-[#7C78ED]">
+                      {t(`items.${index}.title.0`)}
+                    </span>
                     <br />
-                    appointment booking
+                    {t(`items.${index}.title.1`)}
                   </h3>
 
                   {/* Description */}
                   <p className="mb-[30px] max-w-[580px] text-[14px]/[19px] tracking-[-.008em] text-[#3A364D]">
-                    A seamless way for patients to schedule visits in seconds.
-                    eDoktor connects with clinics, doctors, and local health
-                    systems to deliver real-time availability and instant
-                    confirmations.
+                    {t(`items.${index}.description`)}
                   </p>
 
                   {/* List */}
-                  <Components.List />
+                  <Components.List
+                    items={[
+                      t(`items.${index}.items.0`),
+                      t(`items.${index}.items.1`),
+                      t(`items.${index}.items.2`),
+                    ]}
+                  />
                 </div>
 
                 {/* Preview */}
@@ -122,9 +127,9 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
                 >
                   <NextImage
                     className="h-full w-auto object-contain object-bottom"
-                    src="/images/home/healthcare.webp"
-                    width={1470}
-                    height={1170}
+                    src={item.preview}
+                    width={2940}
+                    height={2340}
                     alt="preview"
                   />
                   {/* group-hover:transform-[scale(1.03)] transition-img*/}
@@ -160,4 +165,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
   );
 };
 
-const data = [{ id: 1 }, { id: 2 }, { id: 3 }];
+const data = [
+  { id: 1, preview: "/images/home/healthcare/slide_1.webp" },
+  { id: 2, preview: "/images/home/healthcare/slide_2.webp" },
+];

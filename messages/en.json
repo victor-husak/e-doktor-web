@@ -7,7 +7,8 @@
     "actions": {
       "watch-demo": "Watch a demo",
       "download-app": "Download app",
-      "book-demo": "Book a demo"
+      "book-demo": "Book a demo",
+      "watch-presentation": "Watch presentation"
     }
   },
   "layout": {
@@ -50,7 +51,21 @@
       ],
       "healthcare": {
         "title": ["A modern digital health", "ecosystem for the entire country"],
-        "description": "eDoctor is Albania’s most advanced and comprehensive digital health platform, designed to unify all major healthcare services into one secure, efficient, and user-friendly system. It empowers citizens, supports doctors, and strengthens public institutions through technology."
+        "description": "eDoctor is Albania’s most advanced and comprehensive digital health platform, designed to unify all major healthcare services into one secure, efficient, and user-friendly system. It empowers citizens, supports doctors, and strengthens public institutions through technology.",
+        "items": [
+          {
+            "tag": "Specialist doctors",
+            "title": ["Efficient referral and", "specialist care"],
+            "description": "Find trusted specialists, browse available time slots, and easily book appointments in public hospitals. All schedules and details are automatically synced with your health record.",
+            "items": ["Book specialist appointments in public hospitals", "Receive clear instructions and visit details", "View available time slots"]
+          },
+          {
+            "tag": "Specialist doctors",
+            "title": ["Unified clinical", "history"],
+            "description": "Your diagnoses, past treatments, test results, imaging records, and vaccination status are automatically organized into a unified timeline, giving doctors a clear and accurate picture of your health. Specialists automatically see the patient’s:",
+            "items": ["Diagnoses", "Prior treatments", "Test results"]
+          }
+        ]
       },
       "unified-suite": {
         "header": {
@@ -59,7 +74,50 @@
           "description": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals",
           "read-more": "Read more",
           "description-full": "eDoktor brings together all essential healthcare services into one seamless, secure and user-friendly platform. Each service is designed to simplify the patient journey, support medical professionals. The mobile app offers institutions the data they need to deliver efficient and high-quality care."
-        }
+        },
+        "items": [
+          {
+            "title": "Access to primary care",
+            "description": "Citizens can communicate with their family doctor through:",
+            "items": [
+              {
+                "title": "Secure communication",
+                "description": "Private, encrypted messaging with your doctor."
+              },
+              {
+                "title": "1-to-1 phone calls",
+                "description": "Direct phone consultations with your family doctor."
+              },
+              {
+                "title": "HD video consultations",
+                "description": "High-quality video calls for detailed medical advice."
+              }
+            ]
+          },
+          {
+            "title": "Smart appointment scheduling",
+            "description": "No queues, no repeated visits. The system provides:",
+            "items": [
+              {
+                "title": "Real-time availability",
+                "description": "See when your doctor is online and ready to assist."
+              },
+              {
+                "title": "Booking and rescheduling",
+                "description": "Easily book or change your appointment with your doctor."
+              },
+              {
+                "title": "Automatic reminders",
+                "description": "Receive timely reminders for visits, vaccinations, etc."
+              }
+            ]
+          },
+          {
+            "title": "Integrated documentation",
+            "description":
+              "Every diagnosis, medical note, and prescription is automatically stored in the Digital Health Record, ensuring continuity of care and complete transparency."
+          }
+        ]
       },
       "services": {
         "booking": {
@@ -67,6 +125,34 @@
           "title": ["Digital marketplace", "of pharmacies"],
           "description": "Order medicines online and get fast home delivery. Track your orders and receive real-time updates inside the app.",
           "items": ["Use their ePrescription automatically", "Choose alternative generic options (INN)", "Compare prices and availability"]
+        },
+        "medical-history": {
+          "tag": "Medical history",
+          "title": ["Medical history,", "always with you"],
+          "description": "eDoktor automatically syncs data from clinics, hospitals, pharmacies, and your doctors to give you a complete, reliable medical history.",
+          "items": ["Unified timeline of your care", "Smart filters and instant search", "Digital certificates and documents"]
+        },
+        "emergency-call": {
+          "tag": "Emergency call",
+          "title": ["National", "Emergency (127/112)"],
+          "description": "Smarter, faster emergency response. This improves response time, accuracy, and life-saving decision-making.",
+          "items": ["GPS location is shared", "Medical history is displayed to authorized staff", "Citizen identity is verified"]
+        },
+        "prescriptions": {
+          "tag": "ePrescriptions",
+          "title": ["Safe, signed", "always available"],
+          "description": "Doctors issue prescriptions digitally with eDoktor. Prescriptions remain securely stored in the citizen’s Digital Health Record.",
+          "items": ["Electronic signature", "Automatic transmission to pharmacies", "CZero risk of misreading or loss"]
+        },
+        "vaccinations": {
+          "tag": "Vaccinations",
+          "title": ["Complete vaccination", "oversight"],
+          "description": "Track your doses, access verified certificates, receive reminders, and share your medical records with clinics or schools.",
+          "items": ["Full vaccination history", "Calendar of upcoming doses", "Appointment scheduling"]
+        },
+        "footer": {
+          "help": ["We help organisations succeed with their most important", "transformations"],
+          "questions": "Have questions? Contact us at"
         }
       }
     }
