@@ -33,9 +33,9 @@ export type QuestionItem = {
 export type HomeHeaderUnifiedSuiteProps = {
   className?: string;
   translation: string;
-  title: string;
-  description: string;
-  tag: string;
+  // title: string;
+  // description: string;
+  // tag: string;
   items: Question[];
 };
 
