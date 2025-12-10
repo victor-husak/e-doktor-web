@@ -2,7 +2,7 @@ import * as Icons from "./icons";
 
 import { clsx } from "clsx";
 
-export type HomeHeaderConnectItemProps = {
+export type HomeHeaderSuiteItemProps = {
   className?: string;
   title: string;
   description: string;
@@ -10,7 +10,7 @@ export type HomeHeaderConnectItemProps = {
   onSelect: () => void;
 };
 
-export const HomeHeaderConnectItem: React.FC<HomeHeaderConnectItemProps> = (
+export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
   props,
 ): React.JSX.Element => {
   return (

@@ -10,7 +10,7 @@ import * as Components from "./components";
 
 import { useTranslations } from "next-intl";
 
-import { useHomeHeaderConnect } from "./home-header-сonnect.hook";
+import { useHomeHeaderSuite } from "./home-header-suite.hook";
 
 import { clsx } from "clsx";
 
@@ -29,7 +29,7 @@ export type QuestionItem = {
   image: string;
 };
 
-export type HomeHeaderConnectProps = {
+export type HomeHeaderSuiteProps = {
   className?: string;
   translation: string;
   withFullDescription?: boolean;
@@ -37,7 +37,7 @@ export type HomeHeaderConnectProps = {
   items: Question[];
 };
 
-export const HomeHeaderConnect: React.FC<HomeHeaderConnectProps> = (
+export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
   props,
 ): React.JSX.Element => {
   const t = useTranslations(props.translation);
@@ -51,7 +51,7 @@ export const HomeHeaderConnect: React.FC<HomeHeaderConnectProps> = (
     onTriggerShowFull,
     onChangeActive,
     onChangeActiveItem,
-  } = useHomeHeaderConnect(props);
+  } = useHomeHeaderSuite(props);
 
   return (
     <FaqsSection

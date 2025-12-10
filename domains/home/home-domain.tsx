@@ -17,19 +17,19 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
 
       <Components.Healthcare className="border-border border-b pb-[90px]" />
 
-      <Components.UnifiedSuite
+      <Components.Suite
         reverse
         withFullDescription
         translation="pages.home.unified-suite"
         items={unifiedSuite}
       />
 
-      <Components.UnifiedSuite
+      <Components.Suite
         translation="pages.home.complete-suite"
         items={completeSuite}
       />
 
-      <Components.UnifiedSuite
+      <Components.Suite
         reverse
         translation="pages.home.connect"
         items={connectSuite}
