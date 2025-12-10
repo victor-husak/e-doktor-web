@@ -1,14 +1,12 @@
 import { useState, useCallback } from "react";
 
 import type {
-  HomeHeaderUnifiedSuiteProps,
+  HomeHeaderConnectProps,
   Question,
   QuestionItem,
-} from "./home-header-unified-suite";
+} from "./home-header-сonnect";
 
-export const useHomeHeaderUnifiedSuite = (
-  props: HomeHeaderUnifiedSuiteProps,
-) => {
+export const useHomeHeaderConnect = (props: HomeHeaderConnectProps) => {
   const [showFull, setShowFull] = useState(!props.withFullDescription);
   const [activeId, setActiveId] = useState(props.items.at(0)?.id);
   const [activeItemId, setActiveItemId] = useState(

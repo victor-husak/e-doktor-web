@@ -29,6 +29,12 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
         items={completeSuite}
       />
 
+      <Components.UnifiedSuite
+        reverse
+        translation="pages.home.connect"
+        items={connectSuite}
+      />
+
       <Components.Servises />
 
       <Components.Features className="mb-[50px]" />
@@ -154,6 +160,102 @@ const completeSuite = [
         title: "items.1.items.2.title",
         description: "items.1.items.2.description",
         image: "/images/home/complete-suite/digital_delivery_of-results.webp",
+      },
+    ],
+  },
+];
+
+const connectSuite = [
+  {
+    id: 1,
+    title: "items.0.title",
+    description: "items.0.description",
+    items: [
+      {
+        id: 1,
+        title: "items.0.items.0.title",
+        description: "items.0.items.0.description",
+        image: "/images/home/connect/slide_1.0.webp",
+      },
+      {
+        id: 2,
+        title: "items.0.items.1.title",
+        description: "items.0.items.1.description",
+        image: "/images/home/connect/slide_1.0.webp",
+      },
+      {
+        id: 3,
+        title: "items.0.items.2.title",
+        description: "items.0.items.2.description",
+        image: "/images/home/connect/slide_1.0.webp",
+      },
+      {
+        id: 4,
+        title: "items.0.items.3.title",
+        description: "items.0.items.3.description",
+        image: "/images/home/connect/slide_1.0.webp",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "items.1.title",
+    description: "items.1.description",
+    items: [
+      {
+        id: 1,
+        title: "items.1.items.0.title",
+        description: "items.1.items.0.description",
+        image: "/images/home/connect/slide_2.0.webp",
+      },
+      {
+        id: 2,
+        title: "items.1.items.1.title",
+        description: "items.1.items.1.description",
+        image: "/images/home/connect/slide_2.0.webp",
+      },
+      {
+        id: 3,
+        title: "items.1.items.2.title",
+        description: "items.1.items.2.description",
+        image: "/images/home/connect/slide_2.0.webp",
+      },
+      {
+        id: 4,
+        title: "items.1.items.3.title",
+        description: "items.1.items.3.description",
+        image: "/images/home/connect/slide_2.0.webp",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "items.2.title",
+    description: "items.2.description",
+    items: [
+      {
+        id: 1,
+        title: "items.2.items.0.title",
+        description: "items.1.items.0.description",
+        image: "/images/home/connect/slide_3.0.webp",
+      },
+      {
+        id: 2,
+        title: "items.2.items.1.title",
+        description: "items.1.items.1.description",
+        image: "/images/home/connect/slide_3.0.webp",
+      },
+      {
+        id: 3,
+        title: "items.2.items.2.title",
+        description: "items.1.items.2.description",
+        image: "/images/home/connect/slide_3.0.webp",
+      },
+      {
+        id: 4,
+        title: "items.2.items.3.title",
+        description: "items.1.items.3.description",
+        image: "/images/home/connect/slide_3.0.webp",
       },
     ],
   },

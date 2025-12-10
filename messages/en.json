@@ -209,6 +209,81 @@
           }
         ]
       },
+      "connect": {
+        "header": {
+          "tag": "Who we help?",
+          "title": ["Connect with", "your family doctor"],
+          "description": "Access your family doctor for routine care, medical questions, and guidance."
+        },
+        "items": [
+          {
+            "title": "Fast communication",
+            "description": "Message or reach out to your doctor instantly",
+            "items": [
+              {
+                "title": "Laboratory tests",
+                "description": "Book tests at nearby facilities with real-time availability."
+              },
+              {
+                "title": "Clear availability",
+                "description": "View working hours and contact times."
+              },
+              {
+                "title": "Care coordination",
+                "description": "Your doctor stays connected with your health journey."
+              },
+              {
+                "title": "Referral management",
+                "description": "Receive and track referrals to specialist doctors"
+              }
+            ]
+          },
+          {
+            "title": "Health information in one place",
+            "description": "Access your lab results, prescriptions, vaccination schedule, and health record.",
+            "items": [
+              {
+                "title": "Medical tests",
+                "description": "Immediate access to lab work, imaging, and reports."
+              },
+              {
+                "title": "Pharmacy",
+                "description": "Check current prescriptions and upcoming renewals."
+              },
+              {
+                "title": "Vaccinations",
+                "description": "Track completed doses and upcoming appointments."
+              },
+              {
+                "title": "Health record",
+                "description": "Your complete medical history stored securely."
+              }
+            ]
+          },
+          {
+            "title": "Smart notifications",
+            "description": "Receive updates about referrals, test results, prescriptions, appointments, etc.",
+            "items": [
+              {
+                "title": "Real-time alerts",
+                "description": "Immediate notifications for important updates in the app"
+              },
+              {
+                "title": "Health reminders",
+                "description": "Stay on track with check-ups, vaccinations, and routine care."
+              },
+              {
+                "title": "Test & prescription updates",
+                "description": "Get alerted when results are ready or prescriptions change."
+              },
+              {
+                "title": "Appointment follow-ups",
+                "description": "Notifications about upcoming visits and necessary actions."
+              }
+            ]
+          }
+        ]
+      },
       "services": {
         "booking": {
           "tag": "Online pharmacy",

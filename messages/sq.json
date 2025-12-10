@@ -208,6 +208,81 @@
           }
         ]
       },
+      "connect": {
+        "header": {
+          "tag": "Kë ndihmojmë?",
+          "title": ["Lidhu me", "mjekun tënd të familjes"],
+          "description": "Qasuni mjekut tuaj të familjes për kujdes rutinë, pyetje mjekësore dhe udhëzime."
+        },
+        "items": [
+          {
+            "title": "Komunikim i shpejtë",
+            "description": "Dërgoni mesazh ose kontaktoni mjekun menjëherë.",
+            "items": [
+              {
+                "title": "Disponueshmëri e qartë",
+                "description": "Shikoni orarin e punës dhe kohët e kontaktit."
+              },
+              {
+                "title": "Clear availability",
+                "description": "View working hours and contact times."
+              },
+              {
+                "title": "Koordinim I kujdesit",
+                "description": "Mjeku juaj qëndron I informuar për udhëtimin tuaj shëndetësor."
+              },
+              {
+                "title": "Menaxhimi I referimeve",
+                "description": "Merrni dhe ndiqni referimet për mjekët specialistë."
+              }
+            ]
+          },
+          {
+            "title": "Informacioni shëndetësor në një vend",
+            "description": "Qasuni rezultateve të analizave laboratorike, recetave, orarit të vaksinimeve dhe kartelës suaj shëndetësore.",
+            "items": [
+              {
+                "title": "Analizat mjekësore",
+                "description": "Qasje e shpejtë në analizat dhe raportet mjekësore."
+              },
+              {
+                "title": "Farmacia",
+                "description": "Kontrolloni recetat aktuale dhe rinovimet e ardhshme."
+              },
+              {
+                "title": "Vaksinimet",
+                "description": "Ndiqni dozat dhe takimet e vaksinimit."
+              },
+              {
+                "title": "Kartela shëndetësore",
+                "description": "Historiku juaj i plotë mjekësor, i ruajtur në mënyrë të sigurt."
+              }
+            ]
+          },
+          {
+            "title": "Njoftime të zgjuara",
+            "description": "Merrni përditësime për referimet, rezultatet e analizave, recetat, takimet, etj.",
+            "items": [
+              {
+                "title": "Njoftime në kohë reale",
+                "description": "Lajmërime të menjëhershme për përditësime."
+              },
+              {
+                "title": "Kujtesa shëndetësore",
+                "description": "Kujtesa për kontrolle, vaksina dhe kujdes rutinë."
+              },
+              {
+                "title": "Analiza & receta",
+                "description": "Lajmërohuni kur rezultatet janë gati ose recetat ndryshojnë."
+              },
+              {
+                "title": "Ndiqni takimet",
+                "description": "Njoftime për vizitat e ardhshme dhe hapat e nevojshëm."
+              }
+            ]
+          }
+        ]
+      },
       "services": {
         "booking": {
           "tag": "Farmacia online",
