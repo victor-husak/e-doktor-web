@@ -13,18 +13,20 @@ export const HomeDomain: React.FC<HomeDomainProps> = (
     <div className={clsx(props.className, "")}>
       <Components.Header />
 
-      <Components.Points className="border-border border-b" />
+      <Components.Points className={clsx("hidden", "lg:grid")} />
 
       <Components.Healthcare className="border-border border-b pb-[90px]" />
 
       <Components.Suite
         reverse
+        id="what-we-offer"
         withFullDescription
         translation="pages.home.unified-suite"
         items={unifiedSuite}
       />
 
       <Components.Suite
+        id="who-we-help"
         translation="pages.home.complete-suite"
         items={completeSuite}
       />

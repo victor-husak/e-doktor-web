@@ -54,6 +54,8 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
                 animation="background"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
+                href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
+                target="_blank"
               />
             </>
           }
@@ -128,6 +130,8 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
                 animation="scale"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
+                href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
+                target="_blank"
               />
             </>
           }

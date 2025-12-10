@@ -18,7 +18,7 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
     <section
       className={clsx(
         props.className,
-        "relative container grid grid-cols-1 gap-5 pt-5 pb-[87px]",
+        "relative container grid grid-cols-1 gap-5 pt-5",
         "sm:grid-cols-2 lg:grid-cols-3",
       )}
     >
@@ -39,9 +39,6 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
         description={t("2.description")}
         IconComponent={<Icons.Connected />}
       />
-
-      {/* Icon */}
-      <Icons.Star className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 animate-(--animate-spin-custom)" />
     </section>
   );
 };

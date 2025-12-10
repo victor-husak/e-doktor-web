@@ -31,6 +31,7 @@ export type QuestionItem = {
 
 export type HomeHeaderSuiteProps = {
   className?: string;
+  id?: string;
   translation: string;
   withFullDescription?: boolean;
   reverse?: boolean;
@@ -57,7 +58,7 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
     <FaqsSection
       reverse={props.reverse}
       className="scroll-mt-15"
-      id="what-we-offer"
+      id={props.id}
       tag={t("header.tag")}
       title={
         <>

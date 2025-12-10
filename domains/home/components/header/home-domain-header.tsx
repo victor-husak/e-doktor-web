@@ -65,6 +65,8 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
             title={tCommonActions("download-app")}
             animation="scale"
             IconComponent={<DownloadIcon color="#1D1D1F" />}
+            href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
+            target="_blank"
           />
         </div>
 

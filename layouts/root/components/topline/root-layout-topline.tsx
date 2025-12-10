@@ -24,7 +24,7 @@ export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
       {/* Description */}
       <p
         className={clsx(
-          "text-topline-foreground text-[12px]/[16px]",
+          "text-topline-foreground text-[13px]/[16px]",
           "xl:absolute xl:left-1/2 xl:-translate-x-1/2",
         )}
       >

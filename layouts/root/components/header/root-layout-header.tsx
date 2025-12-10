@@ -34,10 +34,13 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
 
       {/* Action */}
       <Button
+        className="text-[13px]/[15px] font-medium"
         title={tCommonActions("download-app")}
         size="small"
         animation="scale"
         IconComponent={<DownloadIcon />}
+        href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
+        target="_blank"
       />
     </header>
   );

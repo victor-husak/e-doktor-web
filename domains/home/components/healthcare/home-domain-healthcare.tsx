@@ -37,7 +37,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
       className={clsx(props.className)}
       HeaderComponent={
         <SectionHeader
-          className="pt-[27px] pb-20"
+          className="pt-15 pb-20"
           classNameDescription="max-w-[700px]"
           title={
             <>
@@ -47,6 +47,9 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
             </>
           }
           description={t("description")}
+          TopComponent={
+            <Icons.Star className="mb-5 animate-(--animate-spin-custom)" />
+          }
           ActionComponent={
             <>
               <Button
@@ -60,6 +63,8 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
                 animation="background"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
+                href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
+                target="_blank"
               />
             </>
           }

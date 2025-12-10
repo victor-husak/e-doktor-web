@@ -18,7 +18,7 @@ export const HomeHeaderSuiteItem: React.FC<HomeHeaderSuiteItemProps> = (
       className={clsx(
         props.className,
         "flex cursor-pointer gap-[15px] rounded-md border border-[#EFF0F4] p-3.5 pr-5 transition-colors",
-        "hover:bg-[#EFF0F4]",
+        "hover:bg-[#F8F9FA]",
         { "bg-white": !props.active },
         { "bg-[#EFF0F4]": props.active },
       )}

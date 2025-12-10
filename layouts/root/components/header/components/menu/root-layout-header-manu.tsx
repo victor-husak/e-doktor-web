@@ -21,7 +21,7 @@ export const RootLayoutHeaderManu: React.FC<RootLayoutHeaderManuProps> = (
 
       <Components.Item href="#features" title={t("features")} />
 
-      <Components.Item href="#contact-us" title={t("contact-us")} />
+      <Components.Item href="#footer" title={t("contact-us")} />
     </menu>
   );
 };

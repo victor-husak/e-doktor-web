@@ -12,7 +12,10 @@ export const RootLayoutFooter: React.FC<RootLayoutFooterProps> = (
   props,
 ): React.JSX.Element => {
   return (
-    <footer className={clsx(props.className, "bg-footer-background container")}>
+    <footer
+      className={clsx(props.className, "bg-footer-background container")}
+      id="footer"
+    >
       <Components.Topline />
 
       {/* Content */}

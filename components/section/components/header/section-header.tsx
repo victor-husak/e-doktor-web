@@ -6,6 +6,7 @@ export type SectionHeaderProps = {
   title: React.ReactNode;
   description: string;
   ActionComponent?: React.ReactNode;
+  TopComponent?: React.ReactNode;
 };
 
 export const SectionHeader: React.FC<SectionHeaderProps> = (
@@ -15,6 +16,9 @@ export const SectionHeader: React.FC<SectionHeaderProps> = (
     <header
       className={clsx(props.className, "flex flex-col items-center py-25")}
     >
+      {/* Top */}
+      {props.TopComponent}
+
       {/* Title */}
       <h2
         className={clsx(
