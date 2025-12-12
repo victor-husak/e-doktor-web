@@ -25,19 +25,19 @@ export const HomeDomainPoints: React.FC<HomeDomainPointsProps> = (
       <Components.Item
         title={t("0.title")}
         description={t("0.description")}
-        IconComponent={<Icons.Trust />}
+        src="/images/home/points/1.png"
       />
 
       <Components.Item
         title={t("1.title")}
         description={t("1.description")}
-        IconComponent={<Icons.Modern />}
+        src="/images/home/points/2.png"
       />
 
       <Components.Item
         title={t("2.title")}
         description={t("2.description")}
-        IconComponent={<Icons.Connected />}
+        src="/images/home/points/3.png"
       />
     </section>
   );
