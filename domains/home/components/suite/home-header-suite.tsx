@@ -97,7 +97,7 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
         image && (
           <NextImage
             className={clsx(
-              "mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
+              "z-1 mx-auto max-h-[350px] flex-1 rounded-lg bg-[#F5F5F7] object-contain object-center",
               "lg:max-h-[400px] lg:max-w-full",
               "xl:max-h-none xl:max-w-[630px]",
             )}
@@ -105,6 +105,7 @@ export const HomeHeaderSuite: React.FC<HomeHeaderSuiteProps> = (
             width={3780}
             height={4140}
             alt="preview"
+            key={image}
           />
         )
       }

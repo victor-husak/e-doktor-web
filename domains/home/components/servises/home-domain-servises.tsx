@@ -45,7 +45,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <>
               <Button
                 animation="scale"
-                title={tCommonActions("book-demo")}
+                title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
               />
 
@@ -120,7 +120,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             <>
               <Button
                 animation="scale"
-                title={tCommonActions("book-demo")}
+                title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
               />
 
@@ -172,7 +172,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
               className="before:bg-[#EAEAED]"
               variant="second"
               animation="scale"
-              title={tCommonActions("book-demo")}
+              title={tCommonActions("watch-demo")}
               IconComponent={<VideoIcon color="currentColor" />}
             />
           }

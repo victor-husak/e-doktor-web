@@ -54,7 +54,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
             <>
               <Button
                 animation="scale"
-                title={tCommonActions("book-demo")}
+                title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
               />
 

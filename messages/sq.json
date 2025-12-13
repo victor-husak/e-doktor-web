@@ -15,7 +15,7 @@
   },
   "layout": {
     "topline": {
-      "description": ["Rezervoni takime, menaxhoni recetat dhe qasuni të dhënave tuaja të shëndetit publik", "të gjitha në një aplikacion"]
+      "description": ["Rezervoni vizitat mjekësore, menaxhoni eRecetat dhe aksesoni informacionin tuaj në Dosjen Shëndetësore", "gjithçka në një aplikacion të vetëm."]
     },
     "header":{
       "menu": {
@@ -48,7 +48,7 @@
           "items": {
             "contact-us": "Kontakto na",
             "help-center": "Qendra e ndihmës",
-            "book-demo": "Rezervo një demonstrim"
+            "watch-demo": "Shiko demonstrimin"
           }
         },
         "contact": {
@@ -75,7 +75,7 @@
         "title": ["Platforma kombëtare e",  "shëndetësisë dixhitale"],
         "tag": "Mirësevini në eDoktor",
         "description": "Një portë e vetme dixhitale që lidh qytetarët, mjekët dhe institucionet shëndetësore. Me teknologji moderne dhe siguri të lartë, eDoktor përmirëson mënyrën e aksesimit dhe menaxhimit të kujdesit shëndetësor në të gjithë vendin.",
-        "info": "Teknologjia që fuqizon institucionet. Dixhitalizimi që i shërben çdo qytetari. Lexoni më shumë në"
+        "info": "Teknologjia që fuqizon institucionet. Dixhitalizimi që i shërben çdo qytetari."
       },
       "points": [
         {

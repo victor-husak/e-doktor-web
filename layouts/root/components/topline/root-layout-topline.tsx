@@ -24,16 +24,15 @@ export const RootLayoutTopline: React.FC<RootLayoutToplineProps> = (
       {/* Description */}
       <p
         className={clsx(
-          "text-topline-foreground text-[13px]/[16px]",
-          "xl:absolute xl:left-1/2 xl:-translate-x-1/2",
+          "text-topline-foreground flex-1 text-center text-[13px]/[16px]",
+          "xl:absolute xl:right-0 xl:left-0",
         )}
       >
-        {t("description.0")} —{" "}
-        <span className={clsx("link-dashed")}>{t("description.1")}</span>
+        {t("description.0")} — <span>{t("description.1")}</span>
       </p>
 
       {/* Logo */}
-      <Lang />
+      <Lang className="z-1" />
     </div>
   );
 };

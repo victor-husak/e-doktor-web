@@ -48,7 +48,7 @@
           "items": {
             "contact-us": "Contact us",
             "help-center": "Help Center",
-            "book-demo": "Book a demo"
+            "watch-demo": "Watch a demo"
           }
         },
         "contact": {
@@ -75,7 +75,7 @@
         "title": ["Albania’s complete national",  "digital health platform"],
         "tag": "Welcome to eDoktor",
         "description": "A single, unified digital gateway where citizens, doctors, institutions, and emergency services connect seamlessly. Built with advanced technology, strong security, and a human-centered approach.",
-        "info": "Technology that strengthens institutions. Digitalization that empowers citizens. Read more on"
+        "info": "Technology that strengthens institutions. Digitalization that empowers citizens."
       },
       "points": [
         {

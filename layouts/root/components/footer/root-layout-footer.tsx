@@ -76,7 +76,7 @@ const productOptions: MenuProps["items"] = [
 const supportOptions: MenuProps["items"] = [
   { key: "1", title: "contact-us", withTranslation: true },
   { key: "2", title: "help-center", withTranslation: true },
-  { key: "3", title: "book-demo", withTranslation: true },
+  { key: "3", title: "watch-demo", withTranslation: true },
 ];
 
 const contactOptions: MenuProps["items"] = [

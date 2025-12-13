@@ -1,5 +1,3 @@
-import NextLink from "next/link";
-
 import { Button } from "@/components";
 
 import { BookIcon, DownloadIcon } from "@/icons";
@@ -72,14 +70,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
 
         {/* Info */}
         <p className="mt-[82px] max-w-[380px] text-[12px]/[16px] text-[#A3A7AD]">
-          {t("info")}{" "}
-          <NextLink
-            className="text-[#7F848D] underline"
-            href="https://startupalbania.gov.al/"
-            target="_blank"
-          >
-            startupalbania.gov.al
-          </NextLink>
+          {t("info")}
         </p>
       </div>
 

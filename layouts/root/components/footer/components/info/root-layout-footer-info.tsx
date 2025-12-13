@@ -17,7 +17,7 @@ export const RootLayoutFooterInfo: React.FC<RootLayoutFooterInfoProps> = (
         {t("title")}
       </p>
 
-      <p className="w-[390px] text-[14px]/[20px] tracking-[-.008em] text-[#8C8F91]">
+      <p className="max-w-[390px] text-[14px]/[20px] tracking-[-.008em] text-[#8C8F91]">
         {t("description")}
       </p>
     </div>
