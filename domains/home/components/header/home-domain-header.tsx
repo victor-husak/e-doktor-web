@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import { Button, ButtonDownload } from "@/components";
 
 import { BookIcon, DownloadIcon } from "@/icons";
 
@@ -20,9 +20,10 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
 
   return (
     <header
+      id="platform"
       className={clsx(
         props.className,
-        "container-small relative overflow-hidden bg-[#EFEFF0]",
+        "container-small relative scroll-mt-40 overflow-hidden bg-[#EFEFF0]",
       )}
     >
       {/* Content */}
@@ -57,14 +58,12 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
             IconComponent={<BookIcon />}
           />
 
-          <Button
+          <ButtonDownload
             className="before:bg-[#E2E2E2]"
             variant="second"
             title={tCommonActions("download-app")}
             animation="scale"
             IconComponent={<DownloadIcon color="#1D1D1F" />}
-            href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
-            target="_blank"
           />
         </div>
 

@@ -1,4 +1,4 @@
-import { Button, Logo } from "@/components";
+import { Logo, ButtonDownload } from "@/components";
 
 import { DownloadIcon } from "@/icons";
 
@@ -33,14 +33,12 @@ export const RootLayoutHeader: React.FC<RootLayoutHeaderProps> = (
       />
 
       {/* Action */}
-      <Button
+      <ButtonDownload
         className="text-[13px]/[15px] font-medium"
         title={tCommonActions("download-app")}
         size="small"
         animation="scale"
         IconComponent={<DownloadIcon />}
-        href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
-        target="_blank"
       />
     </header>
   );

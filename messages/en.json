@@ -19,10 +19,11 @@
     },
     "header": {
       "menu": {
-        "what-we-offer": "What we offer",
-        "who-we-help": "Who we help",
+        "platform": "Platform",
+        "for-citizens": "For Citizens",
         "features": "Features",
-        "contact-us": "Contact us"
+        "data-security": "Data Security",
+        "contact": "Contact"
       }
     },
     "info": {

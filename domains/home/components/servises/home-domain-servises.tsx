@@ -6,7 +6,7 @@ import {
   BannerLayoutTag,
 } from "@/layouts/banner";
 
-import { Section, SectionHeader, Button } from "@/components";
+import { Section, SectionHeader, Button, ButtonDownload } from "@/components";
 
 import { VideoIcon, DownloadIcon } from "@/icons";
 
@@ -49,13 +49,11 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
                 IconComponent={<VideoIcon />}
               />
 
-              <Button
+              <ButtonDownload
                 variant="second"
                 animation="background"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
-                href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
-                target="_blank"
               />
             </>
           }
@@ -124,14 +122,12 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
                 IconComponent={<VideoIcon />}
               />
 
-              <Button
+              <ButtonDownload
                 className="before:bg-[#D4CDF4]"
                 variant="second"
                 animation="scale"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
-                href={process.env.NEXT_PUBLIC_DOWNLOAD_APP}
-                target="_blank"
               />
             </>
           }

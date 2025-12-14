@@ -2228,6 +2228,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"detect-europe-js@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "detect-europe-js@npm:0.1.2"
+  checksum: 5a69602302955f50d36dc880ccecb481f24976f2f242aa0b359b5a6477b7e5085bb9bc7bdefdbf3a5bb9fbc3a8e892adda23dc65b9304edac49807caf75446e3
+  languageName: node
+  linkType: hard
+
 "detect-libc@npm:^1.0.3":
   version: 1.0.3
   resolution: "detect-libc@npm:1.0.3"
@@ -2290,6 +2297,7 @@ __metadata:
     swiper: ^12.0.3
     tailwindcss: ^4
     typescript: ^5
+    ua-parser-js: ^2.0.7
   languageName: unknown
   linkType: soft
 
@@ -3443,6 +3451,13 @@ __metadata:
   dependencies:
     call-bound: ^1.0.3
   checksum: 1611fedc175796eebb88f4dfc393dd969a4a8e6c69cadaff424ee9d4464f9f026399a5f84a90f7c62d6d7ee04e3626a912149726de102b0bd6c1ee6a9868fa5a
+  languageName: node
+  linkType: hard
+
+"is-standalone-pwa@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "is-standalone-pwa@npm:0.1.1"
+  checksum: bbd2ee7cbea985139f66fe8785e7699f52311e9c14d74190659885222b79dd1e8845b02f69b9221a23a2b4b00e8d4bea0a5a2603b2f26cb6d2071d46093ccf84
   languageName: node
   linkType: hard
 
@@ -5422,6 +5437,26 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 8bb8d86819ac86a498eada254cad7fb69c5f74778506c700c2a712daeaff21d3a6f51fd0d534fe16903cb010d1b74f89437a3d02d4d0ff5ca2ba9a4660de8497
+  languageName: node
+  linkType: hard
+
+"ua-is-frozen@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "ua-is-frozen@npm:0.1.2"
+  checksum: 139c89b175bd4e3aeed2ebd1c972ce078e9507ade5f9d704d4ac0a916b2a5e8ada0bc6f616a8c39415e6b602e967ab172d0c44f0dfe353ce8104139897472f48
+  languageName: node
+  linkType: hard
+
+"ua-parser-js@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "ua-parser-js@npm:2.0.7"
+  dependencies:
+    detect-europe-js: ^0.1.2
+    is-standalone-pwa: ^0.1.1
+    ua-is-frozen: ^0.1.2
+  bin:
+    ua-parser-js: script/cli.js
+  checksum: 34c7f61d1cf54f625bda4711816b4bb799146246c182b2ddaf53a2f4dec71761b41f2ced83c639f7dd021b4bdfeb76240da4cc0ea416d735e013addaccf390ca
   languageName: node
   linkType: hard
 

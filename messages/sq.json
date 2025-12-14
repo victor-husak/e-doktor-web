@@ -19,10 +19,11 @@
     },
     "header":{
       "menu": {
-        "what-we-offer": "Çfarë ofrojmë",
-        "who-we-help": "Kujt i ndihmojmë",
-        "features": "Veçoritë",
-        "contact-us": "Kontakto na"
+        "platform": "Platforma",
+        "for-citizens": "Për qytetarët",
+        "features": "Funksionalitetet",
+        "data-security": "Siguria e të Dhënave",
+        "contact": "Kontakti"
       }
     },
     "info": {
