@@ -21,6 +21,8 @@ export const PreviewModal: React.FC<PreviewModalProps> = (
         className="-mb-px rounded-b-[10px]"
         src="/IMG_9748.MP4"
         autoPlay
+        muted
+        playsInline
         controls
         loop
         width="90vw"
