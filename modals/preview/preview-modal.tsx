@@ -2,6 +2,8 @@ import { Modal, type ModalProps } from "@/components";
 
 import ReactPlayer from "react-player";
 
+import { useTranslations } from "next-intl";
+
 export type PreviewModalProps = {
   isOpen: ModalProps["isOpen"];
   onRequestClose: ModalProps["onRequestClose"];
@@ -10,10 +12,12 @@ export type PreviewModalProps = {
 export const PreviewModal: React.FC<PreviewModalProps> = (
   props,
 ): React.JSX.Element => {
+  const t = useTranslations("common.actions");
+
   return (
     <Modal
       isOpen={props.isOpen}
-      title="Watch a demo"
+      title={t("watch-demo")}
       headerBorder
       onRequestClose={props.onRequestClose}
     >
