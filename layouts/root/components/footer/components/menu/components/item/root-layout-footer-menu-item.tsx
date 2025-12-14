@@ -6,6 +6,7 @@ export type RootLayoutFooterMenuItemProps = {
   className?: string;
   title: string;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
 };
 
 export const RootLayoutFooterMenuItem: React.FC<
@@ -20,7 +21,9 @@ export const RootLayoutFooterMenuItem: React.FC<
       )}
     >
       {props.href ? (
-        <NextLink href={props.href}>{props.title}</NextLink>
+        <NextLink href={props.href} target={props.target}>
+          {props.title}
+        </NextLink>
       ) : (
         props.title
       )}

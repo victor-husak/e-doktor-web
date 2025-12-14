@@ -6,7 +6,13 @@ import {
   BannerLayoutTag,
 } from "@/layouts/banner";
 
-import { Section, SectionHeader, Button, ButtonDownload } from "@/components";
+import {
+  Section,
+  SectionHeader,
+  Button,
+  ButtonDownload,
+  ButtonWatch,
+} from "@/components";
 
 import { VideoIcon, DownloadIcon } from "@/icons";
 
@@ -43,7 +49,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           description="Track your doses, access verified digital certificates, receive reminders for upcoming shots, and instantly share your medical records with clinics or schools — all in one tap."
           ActionComponent={
             <>
-              <Button
+              <ButtonWatch
                 animation="scale"
                 title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
@@ -116,7 +122,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           }
           ActionComponent={
             <>
-              <Button
+              <ButtonWatch
                 animation="scale"
                 title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
@@ -164,7 +170,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             />
           }
           ActionComponent={
-            <Button
+            <ButtonWatch
               className="before:bg-[#EAEAED]"
               variant="second"
               animation="scale"
@@ -214,7 +220,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             />
           }
           ActionComponent={
-            <Button
+            <ButtonWatch
               className="before:bg-white"
               variant="second"
               animation="scale"
@@ -264,7 +270,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             />
           }
           ActionComponent={
-            <Button
+            <ButtonWatch
               className="before:bg-[#EAEAED]"
               variant="second"
               animation="scale"
@@ -314,7 +320,7 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
             />
           }
           ActionComponent={
-            <Button
+            <ButtonWatch
               className="before:bg-[#EBD8DD]"
               variant="second"
               animation="scale"

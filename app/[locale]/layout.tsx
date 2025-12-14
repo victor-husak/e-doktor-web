@@ -6,6 +6,8 @@ import { uk, enUS } from "date-fns/locale";
 
 import { RootLayout } from "@/layouts/root";
 
+import { ContextModal } from "@/contexts/modal";
+
 import { SFProText, SFCompactDisplay } from "../fonts";
 
 import { CrispLoader } from "../scripts/crisp";
@@ -61,7 +63,9 @@ export default async function RootLayoutPage({
         )}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <RootLayout>{children}</RootLayout>
+          <ContextModal>
+            <RootLayout>{children}</RootLayout>
+          </ContextModal>
         </NextIntlClientProvider>
       </body>
 

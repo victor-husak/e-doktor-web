@@ -11,7 +11,7 @@ export const useButtonDownload = () => {
 
     window.open(
       osName === OSName.MACOS || osName === OSName.IOS
-        ? process.env.NEXT_PUBLIC_DOWNLOAD_APP
+        ? process.env.NEXT_PUBLIC_DOWNLOAD_APP_IOS
         : "/edoktors.apk",
       "_blank",
     );

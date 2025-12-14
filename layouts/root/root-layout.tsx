@@ -1,4 +1,12 @@
+import { Suspense } from "react";
+
+import dynamic from "next/dynamic";
+
 import * as Components from "./components";
+
+const RootLayoutModals = dynamic(() =>
+  import("./modals").then((mod) => mod.RootLayoutModals),
+);
 
 import { clsx } from "clsx";
 
@@ -21,6 +29,10 @@ export const RootLayout: React.FC<RootLayoutProps> = (
       {props.children}
 
       <Components.Footer />
+
+      <Suspense>
+        <RootLayoutModals />
+      </Suspense>
     </Components.Scroll>
   );
 };

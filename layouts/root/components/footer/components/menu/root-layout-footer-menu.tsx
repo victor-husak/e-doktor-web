@@ -11,6 +11,7 @@ export type RootLayoutFooterMenuProps = {
     key: string;
     title: string;
     href?: string;
+    target?: React.HTMLAttributeAnchorTarget;
     withTranslation?: boolean;
   }[];
 };
@@ -33,6 +34,7 @@ export const RootLayoutFooterMenu: React.FC<RootLayoutFooterMenuProps> = (
           <Components.Item
             title={item.withTranslation ? t(`items.${item.title}`) : item.title}
             href={item.href}
+            target={item.target}
             key={item.key}
           />
         ))}

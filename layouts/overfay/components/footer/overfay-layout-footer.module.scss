@@ -1,0 +1,46 @@
+@use "@/styles/foundation/common.scss";
+@use "@/styles/mixins.scss";
+
+.container {
+  padding: 14px 0px 12px;
+
+  background-color: rgb(250, 250, 250);
+}
+
+.content {
+  @extend .common-section;
+
+  display: flex;
+  align-items: center;
+
+  letter-spacing: 0.016em;
+  color: rgb(var(--foreground-third-rgb));
+  font-size: 12px;
+  line-height: 1;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    margin: 0px 15px;
+    flex-shrink: 0px;
+
+    background-color: rgb(236, 236, 239);
+  }
+}
+
+.link {
+  @include mixins.link();
+
+  padding: 5px 0px;
+
+  &:hover {
+    color: rgb(var(--foreground-rgb));
+  }
+}

@@ -2,3 +2,4 @@ export { default as DownloadIcon } from "./download";
 export { default as BookIcon } from "./book";
 export { default as VideoIcon } from "./video";
 export { default as PlusIcon } from "./plus";
+export { default as CloseIcon } from "./close";

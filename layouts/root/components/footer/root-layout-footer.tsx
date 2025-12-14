@@ -83,7 +83,7 @@ const supportOptions: MenuProps["items"] = [
 ];
 
 const contactOptions: MenuProps["items"] = [
-  { key: "1", title: "info@edoktor.al" },
+  { key: "1", title: "info@edoktor.al", href: "mailto:info@edoktor.al" },
   { key: "2", title: "+355 XX XXX XXXX" },
   { key: "3", title: "Instagram" },
   { key: "4", title: "Facebook" },
@@ -91,6 +91,16 @@ const contactOptions: MenuProps["items"] = [
 ];
 
 const downloadOptions: MenuProps["items"] = [
-  { key: "1", title: "App Store" },
-  { key: "2", title: "Google Play" },
+  {
+    key: "1",
+    title: "App Store",
+    href: process.env.NEXT_PUBLIC_DOWNLOAD_APP_IOS,
+    target: "_blank",
+  },
+  {
+    key: "2",
+    title: "Google Play",
+    href: process.env.NEXT_PUBLIC_DOWNLOAD_APP_ANDROID,
+    target: "_blank",
+  },
 ];

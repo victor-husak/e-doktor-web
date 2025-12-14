@@ -1,4 +1,4 @@
-import { Button, ButtonDownload } from "@/components";
+import { Button, ButtonDownload, ButtonWatch } from "@/components";
 
 import { BookIcon, DownloadIcon } from "@/icons";
 
@@ -52,7 +52,7 @@ export const HomeDomainHeader: React.FC<HomeDomainHeaderProps> = (
 
         {/* Actions */}
         <div className="flex items-center gap-2.5">
-          <Button
+          <ButtonWatch
             title={tCommonActions("watch-demo")}
             animation="scale"
             IconComponent={<BookIcon />}

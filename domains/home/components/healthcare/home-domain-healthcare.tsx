@@ -2,7 +2,13 @@
 
 import NextImage from "next/image";
 
-import { Section, SectionHeader, Button, ButtonDownload } from "@/components";
+import {
+  Section,
+  SectionHeader,
+  Button,
+  ButtonDownload,
+  ButtonWatch,
+} from "@/components";
 
 import { VideoIcon, DownloadIcon } from "@/icons";
 
@@ -52,7 +58,7 @@ export const HomeDomainHealthcare: React.FC<HomeDomainHealthcareProps> = (
           }
           ActionComponent={
             <>
-              <Button
+              <ButtonWatch
                 animation="scale"
                 title={tCommonActions("watch-demo")}
                 IconComponent={<VideoIcon />}
