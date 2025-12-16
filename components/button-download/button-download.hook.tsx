@@ -12,7 +12,7 @@ export const useButtonDownload = () => {
     window.open(
       osName === OSName.MACOS || osName === OSName.IOS
         ? process.env.NEXT_PUBLIC_DOWNLOAD_APP_IOS
-        : "/edoktors.apk",
+        : process.env.NEXT_PUBLIC_DOWNLOAD_APP_ANDROID,
       "_blank",
     );
   }, []);
