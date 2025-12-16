@@ -1,6 +1,6 @@
 @layer components {  
   .button {
-    @apply z-1 relative flex items-center justify-center gap-2.5 transition-all rounded-full cursor-pointer;
+    @apply z-1 relative flex items-center justify-center gap-2.5 py-1.5 transition-all rounded-full cursor-pointer;
 
     &::before {
       @apply content-[""] absolute inset-0 -z-1 transition-all rounded-[inherit];
@@ -8,11 +8,11 @@
 
     /* size */
     &:where([data-size="base"]) {
-      @apply h-[35px] px-[15px] font-medium text-[13px]/[15px];
+      @apply min-h-[35px] px-[15px] font-medium text-[13px]/[15px];
     }
 
     &:where([data-size="small"]) {
-      @apply h-8 px-[15px] text-[12px]/[14px];
+      @apply min-h-8 px-[15px] text-[12px]/[14px];
     }
 /* 
     &:where([data-size="large"]) {
