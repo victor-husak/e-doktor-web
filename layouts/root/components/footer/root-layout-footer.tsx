@@ -84,7 +84,7 @@ const supportOptions: MenuProps["items"] = [
 
 const contactOptions: MenuProps["items"] = [
   { key: "1", title: "info@edoktor.al", href: "mailto:info@edoktor.al" },
-  { key: "2", title: "+355 XX XXX XXXX" },
+  { key: "2", title: "+355 69 20 52 245", href: "tel:+355692052245" },
   { key: "3", title: "Instagram" },
   { key: "4", title: "Facebook" },
   { key: "5", title: "LinkedIn" },
