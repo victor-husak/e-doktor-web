@@ -31,7 +31,9 @@ export const RootLayoutInfo: React.FC<RootLayoutInfoProps> = (
             "inline-flex items-center gap-[5px] transition-opacity",
             "hover:opacity-80",
           )}
-          href="/"
+          target="_blank"
+          rel="noopener"
+          href="https://startupalbania.gov.al/"
         >
           <span className="text-white">{t("description.3")}</span>
 
