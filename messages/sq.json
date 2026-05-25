@@ -6,7 +6,7 @@
   "common": {
     "actions": {
       "watch-demo": "Shiko demonstrimin",
-      "download-app": "Shkarko aplikacionin",
+      "download-app": "Shkarko aplikacionin beta",
       "book-demo": "Rezervo një demonstrim",
       "watch-presentation": "Shiko prezantimin"
     },
@@ -89,7 +89,7 @@
         },
         {
           "title": "Platformë e vetme për çdo qytetar",
-          "description": "Me eDoctor, çdo qytetar fiton qasje të menjëhershme në Dosjen e tij të Plotë Shëndetësore Dixhitale, e cila ofron një pasqyrë të integruar të historikut shëndetësor."
+          "description": "Me eDoktor, çdo qytetar fiton qasje të menjëhershme në Dosjen e tij të Plotë Shëndetësore Dixhitale, e cila ofron një pasqyrë të integruar të historikut shëndetësor."
         }
       ],
       "healthcare": {
@@ -114,8 +114,8 @@
         "header": {
           "tag": "Çfarë ofrojmë",
           "title": ["Një paketë e unifikuar", "shërbimesh shëndetësore dixhitale"],
-          "description": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur.",
-          "description-full": "eDoctor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
+          "description": "eDoktor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur.",
+          "description-full": "eDoktor bashkon të gjitha shërbimet kryesore të shëndetësisë në një platformë të vetme moderne, të sigurt dhe të lehtë për t’u përdorur. Çdo shërbim është ndërtuar për të thjeshtuar udhëtimin e pacientit, për të mbështetur profesionistët shëndetësorë dhe për t’i dhënë institucioneve të dhënat e nevojshme për një sistem efikas dhe cilësor."
         },
         "items": [
           {
@@ -225,8 +225,8 @@
                 "description": "Shikoni orarin e punës dhe kohët e kontaktit."
               },
               {
-                "title": "Clear availability",
-                "description": "View working hours and contact times."
+                "title": "Rezervim i lehtë",
+                "description": "Rezervoni vizita me vetëm disa klikime."
               },
               {
                 "title": "Koordinim I kujdesit",
@@ -285,6 +285,10 @@
         ]
       },
       "services": {
+        "header": {
+          "title": ["Vaksinimet", "së fundmi të thjeshtuara"],
+          "description": "Ndjekni dozat tuaja, aksesoni certifikata digjitale të verifikuara, merrni kujtesa për vaksinat e ardhshme dhe ndani menjëherë të dhënat tuaja mjekësore me klinikat ose shkollat — të gjitha me një klik."
+        },
         "booking": {
           "tag": "Farmacia online",
           "title": ["Platformë digjitale", "e farmacive"],
