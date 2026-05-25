@@ -7,14 +7,13 @@ import {
 } from "@/layouts/banner";
 
 import {
-  Section,
-  SectionHeader,
-  Button,
   ButtonDownload,
   ButtonWatch,
+  Section,
+  SectionHeader,
 } from "@/components";
 
-import { VideoIcon, DownloadIcon } from "@/icons";
+import { DownloadIcon, VideoIcon } from "@/icons";
 
 import * as Components from "./components";
 import * as Icons from "./icons";
@@ -41,12 +40,12 @@ export const HomeDomainServises: React.FC<HomeDomainServisesProps> = (
           classNameDescription="max-w-[520px]"
           title={
             <>
-              Vaccinations,
+              {t("header.title.0")},
               <br />
-              <span>finally made simple</span>
+              <span>{t("header.title.1")}</span>
             </>
           }
-          description="Track your doses, access verified digital certificates, receive reminders for upcoming shots, and instantly share your medical records with clinics or schools — all in one tap."
+          description={t("header.description")}
           ActionComponent={
             <>
               <ButtonWatch

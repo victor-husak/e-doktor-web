@@ -6,7 +6,7 @@
   "common": {
     "actions": {
       "watch-demo": "Watch a demo",
-      "download-app": "Download app",
+      "download-app": "Download beta app",
       "book-demo": "Book a demo",
       "watch-presentation": "Watch presentation"
     },
@@ -89,12 +89,12 @@
         },
         {
           "title": "Connected with Digital Health Record",
-          "description": "With eDoctor, citizens gain immediate access to their complete Digital Health Record, offering a fully integrated overview of their health history."
+          "description": "With eDoktor, citizens gain immediate access to their complete Digital Health Record, offering a fully integrated overview of their health history."
         }
       ],
       "healthcare": {
         "title": ["A modern digital health", "ecosystem for the entire country"],
-        "description": "eDoctor is Albania’s most advanced and comprehensive digital health platform, designed to unify all major healthcare services into one secure, efficient, and user-friendly system. It empowers citizens, supports doctors, and strengthens public institutions through technology.",
+        "description": "eDoktor is Albania’s most advanced and comprehensive digital health platform, designed to unify all major healthcare services into one secure, efficient, and user-friendly system. It empowers citizens, supports doctors, and strengthens public institutions through technology.",
         "items": [
           {
             "tag": "Specialist doctors",
@@ -286,6 +286,10 @@
         ]
       },
       "services": {
+        "header": {
+          "title": ["Vaccinations", "finally made simple"],
+          "description": "Track your doses, access verified digital certificates, receive reminders for upcoming shots, and instantly share your medical records with clinics or schools — all in one tap."
+        },
         "booking": {
           "tag": "Online pharmacy",
           "title": ["Digital marketplace", "of pharmacies"],
