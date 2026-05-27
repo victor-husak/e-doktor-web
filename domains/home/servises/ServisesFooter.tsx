@@ -25,9 +25,8 @@ export const ServisesFooter: React.FC<ServisesFooterProps> = (
       )}
     >
       <p>
-        {t("help")}
-        {/* {" "}
-        <span className="link-dashed text-[#2C2C2C]">{t("help.1")}</span> */}
+        {t("help.0")}{" "}
+        <span className="link-dashed text-[#2C2C2C]">{t("help.1")}</span>
       </p>
 
       <p>
