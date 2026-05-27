@@ -6,14 +6,9 @@ import {
   BannerLayoutTag,
 } from "@/layouts/banner";
 
-import {
-  ButtonDownload,
-  ButtonWatch,
-  Section,
-  SectionHeader,
-} from "@/components";
+import { ButtonWatch, Section, SectionHeader } from "@/components";
 
-import { DownloadIcon, VideoIcon } from "@/icons";
+import { VideoIcon } from "@/icons";
 
 import { ServisesFooter } from "./ServisesFooter";
 
@@ -46,20 +41,11 @@ export const Servises: React.FC<ServisesProps> = (props): React.JSX.Element => {
           }
           description={t("header.description")}
           ActionComponent={
-            <>
-              <ButtonWatch
-                animation="scale"
-                title={tCommonActions("watch-demo")}
-                IconComponent={<VideoIcon />}
-              />
-
-              <ButtonDownload
-                variant="second"
-                animation="background"
-                title={tCommonActions("download-app")}
-                IconComponent={<DownloadIcon color="#1D1D1F" />}
-              />
-            </>
+            <ButtonWatch
+              animation="scale"
+              title={tCommonActions("watch-demo")}
+              IconComponent={<VideoIcon />}
+            />
           }
         />
       }
@@ -126,13 +112,13 @@ export const Servises: React.FC<ServisesProps> = (props): React.JSX.Element => {
                 IconComponent={<VideoIcon />}
               />
 
-              <ButtonDownload
+              {/* <ButtonDownload
                 className="before:bg-[#D4CDF4]"
                 variant="second"
                 animation="scale"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
-              />
+              /> */}
             </>
           }
         />
