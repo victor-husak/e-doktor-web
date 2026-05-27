@@ -1,1 +1,1 @@
-export { PreviewModal } from "./preview-modal";
+export { PreviewModal } from "./PreviewModal";

@@ -1,0 +1,44 @@
+import { SuiteBook } from "@/icons/components";
+
+import { clsx } from "clsx";
+
+export type SuiteItemProps = {
+  className?: string;
+  title: string;
+  description: string;
+  active: boolean;
+  onSelect: () => void;
+};
+
+export const SuiteItem: React.FC<SuiteItemProps> = (
+  props,
+): React.JSX.Element => {
+  return (
+    <div
+      className={clsx(
+        props.className,
+        "gap-md flex cursor-pointer rounded-md border border-[#EFF0F4] p-3.5 pr-5 transition-colors",
+        "hover:bg-[#F8F9FA]",
+        { "bg-[white]": !props.active },
+        { "bg-[#F8F9FA]": props.active },
+      )}
+      onClick={props.onSelect}
+    >
+      {/* Icon */}
+      <div className="border-border flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-white">
+        <SuiteBook />
+      </div>
+
+      {/* Content */}
+      <div className="flex flex-col gap-1.5">
+        {/* Title */}
+        <span className="text-[14px]/[16px] font-medium tracking-[-.008]">
+          {props.title}
+        </span>
+
+        {/* Description */}
+        <p className="text-[14px]/[19px] text-[#838993]">{props.description}</p>
+      </div>
+    </div>
+  );
+};

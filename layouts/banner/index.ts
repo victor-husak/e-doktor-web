@@ -1,4 +1,4 @@
-export { BannerLayout } from "./banner-layout";
+export { BannerLayout } from "./BannerLayout";
 
 // Components
 export { BannerLayoutList } from "./components/list";
