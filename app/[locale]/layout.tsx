@@ -1,14 +1,14 @@
 import { NextIntlClientProvider } from "next-intl";
-import { setRequestLocale, getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
+import { enUS, uk } from "date-fns/locale";
 import { setDefaultOptions } from "date-fns/setDefaultOptions";
-import { uk, enUS } from "date-fns/locale";
 
 import { RootLayout } from "@/layouts/root";
 
 import { ContextModal } from "@/contexts/modal";
 
-import { SFProText, SFCompactDisplay } from "../fonts";
+import { SFCompactDisplay, SFProText } from "../fonts";
 
 import { CrispLoader } from "../scripts/crisp";
 
@@ -17,6 +17,8 @@ import { getTranslations } from "next-intl/server";
 import { clsx } from "clsx";
 
 import "../globals.css";
+
+import type { Organization, WebSite, WithContext } from "schema-dts";
 
 export async function generateMetadata({ params }: RootLayoutPageParams) {
   const { locale } = await params;
@@ -44,6 +46,8 @@ export default async function RootLayoutPage({
 
   setDefaultOptions({ locale: locale === "en" ? enUS : uk });
 
+  const tMeta = await getTranslations({ locale, namespace: "metadata" });
+
   setRequestLocale(locale);
 
   const messages = await getMessages();
@@ -62,6 +66,33 @@ export default async function RootLayoutPage({
           "antialiased",
         )}
       >
+        <script
+          id="ld-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getOrganizationJsonLd({
+                title: tMeta("title"),
+                description: tMeta("description"),
+              }),
+            ),
+          }}
+        />
+
+        <script
+          id="ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getWebsiteJsonLd({
+                title: tMeta("title"),
+                description: tMeta("description"),
+                locale,
+              }),
+            ),
+          }}
+        />
+
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ContextModal>
             <RootLayout>{children}</RootLayout>
@@ -73,3 +104,57 @@ export default async function RootLayoutPage({
     </html>
   );
 }
+
+export const getOrganizationJsonLd = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}): WithContext<Organization> => {
+  const baseUrl = process.env.NEXT_PUBLIC_URL!;
+
+  // const socialLinks = [
+  //   process.env.NEXT_PUBLIC_FACEBOOK_URL,
+  // ].filter(Boolean) as string[];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${baseUrl}/#organization`,
+    name: title,
+    url: baseUrl,
+    description: description,
+    logo: `${baseUrl}/default-image.png`,
+    brand: {
+      "@type": "Brand",
+      name: "eDoktor",
+    },
+    // ...(socialLinks.length > 0 && { sameAs: socialLinks }),
+  };
+};
+export const getWebsiteJsonLd = ({
+  title,
+  description,
+  locale,
+}: {
+  title: string;
+  description: string;
+  locale: string;
+}): WithContext<WebSite> => {
+  const baseUrl = process.env.NEXT_PUBLIC_URL!;
+  const localizedUrl = `${baseUrl}/${locale}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${localizedUrl}/#website`,
+    url: localizedUrl,
+    name: title,
+    description: description,
+    inLanguage: locale,
+    publisher: {
+      "@id": `${baseUrl}/#organization`,
+    },
+  };
+};
