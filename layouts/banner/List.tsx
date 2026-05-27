@@ -2,19 +2,17 @@ import { StarIcon, TextureIcon } from "@/icons";
 
 import { clsx } from "clsx";
 
-export type BannerLayoutListProps = {
+export type ListProps = {
   className?: string;
   items: string[];
 };
 
-export const BannerLayoutList: React.FC<BannerLayoutListProps> = (
-  props,
-): React.JSX.Element => {
+export const List: React.FC<ListProps> = (props): React.JSX.Element => {
   return (
     <ul className={clsx(props.className, "mb-auto flex flex-col gap-3")}>
       {props.items.map((item, index) => (
         <li
-          className="relative my-[-2.5px] flex items-center gap-[15px]"
+          className="gap-md relative my-[-2.5px] flex items-center"
           key={index}
         >
           <StarIcon />
