@@ -34,6 +34,25 @@
   }
 
   --animate-spin-custom: spin-custom var(--spin-speed, 3s) linear infinite;
+
+  /* Spacing */
+  --spacing-xxs: 0.3125rem; /* 5px */
+  --spacing-xs: 0.5rem;     /* 8px */
+  --spacing-sm: 0.625rem;   /* 10px */
+  --spacing-md: 0.9375rem;  /* 15px */
+  --spacing-lg: 1.25rem;    /* 20px */
+  --spacing-xl: 1.5625rem;  /* 25px */
+  --spacing-2xl: 1.875rem;  /* 30px */
+  --spacing-3xl: 2.1875rem; /* 35px */
+  --spacing-4xl: 2.5rem;    /* 40px */
+
+  /* Letter spacing */
+  --tracking-tighter: -.008em;
+  --tracking-tight: -.004em;
+  --tracking-normal: 0em;
+  --tracking-wide: .008em;
+  --tracking-wider: .012em;
+  --tracking-widest: .024em;
 }
 
 html {
@@ -41,8 +60,6 @@ html {
 }
 
 body {
-  
-
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sf-pro);
