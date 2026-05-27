@@ -2,14 +2,9 @@
 
 import NextImage from "next/image";
 
-import {
-  ButtonDownload,
-  ButtonWatch,
-  Section,
-  SectionHeader,
-} from "@/components";
+import { ButtonWatch, Section, SectionHeader } from "@/components";
 
-import { DownloadIcon, VideoIcon } from "@/icons";
+import { VideoIcon } from "@/icons";
 
 import * as Components from "./components";
 import * as Icons from "./icons";
@@ -63,12 +58,12 @@ export const Healthcare: React.FC<HealthcareProps> = (
                 IconComponent={<VideoIcon />}
               />
 
-              <ButtonDownload
+              {/* <ButtonDownload
                 variant="second"
                 animation="background"
                 title={tCommonActions("download-app")}
                 IconComponent={<DownloadIcon color="#1D1D1F" />}
-              />
+              /> */}
             </>
           }
         />
